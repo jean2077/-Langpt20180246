@@ -4,20 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="ballon_left">안녕하세요! 오늘은 우리 把자문에 대해 배워볼까요? </div>
+      <p>혜으응,,,,,</p>
+      <div class="polygon"></div>
+      <div class="rectangle"></div>
+      <div class="ballon_right">선생님 안녕하세요!</div>
+      <div class="chat_ractangle"></div>
     </div>
   );
 }
