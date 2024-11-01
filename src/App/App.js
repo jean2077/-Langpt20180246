@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Login from "../loginPage/login"; // Login 컴포넌트 임포트
 function App() {
   return (
     <div className="App">
+       <Login /> {/* Login 컴포넌트 사용 */}
+
       <div class="hello">안녕하세요! hello! 你好！</div>  
       <div class="ballon_left">안녕하세요! 혜성학생
         오늘은 우리 把자문에 대해 배워볼까요? </div>
