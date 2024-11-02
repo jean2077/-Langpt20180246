@@ -20,29 +20,3 @@ function App() {
 }
 
 export default App;
-function App() {
-  return (
-    <Router>
-< HEAD
-      <div className="App">
-        <Routes> {/* Switch를 Routes로 변경 */}
-          <Route path="/" element={<MainPage />} /> {/* 메인 페이지 경로 */}
-          <Route path="/login" element={<Login />} /> {/* 로그인 페이지 경로 */}
-        </Routes>
-      </div>
-
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
- new_login_branch
-    </Router>
-  );
-}
-
-export default App;
-
- HEAD
-
-
- new_login_branch
