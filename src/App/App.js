@@ -1,23 +1,25 @@
+import React from 'react'; // React를 임포트
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Router 관련 임포트
 import logo from './logo.svg';
 import './App.css';
 import Login from "../loginPage/login"; // Login 컴포넌트 임포트
-import Management from "../Management/Manage";
-  return (
-    <div className="App">
-       <Login /> {/* Login 컴포넌트 사용 */}
-
-      <div class="hello">안녕하세요! hello! 你好！</div>  
-      <div class="ballon_left">안녕하세요! 혜성학생
-        오늘은 우리 把자문에 대해 배워볼까요? </div>
-      
-      <div class="polygon"></div>
-      <div class="rectangle"></div>
-      <div class="ballon_right">선생님 안녕하세요!</div>
-      <div class="chat_ractangle"></div>
-      <div class="long_rectangle"></div>
-      <div class="long_in_rectangle">여기를 눌러 무료로 사용해보세요</div>
-    </div>
-  );
-
+import Management from "../Management/Manage"; // Management 컴포넌트 임포트
+import QuizComponent from "../Quize/quizes"; // QuizComponent로 수정
+import Realquize from "../Realquize/Realquize";
+function App() {  // App 컴포넌트를 함수로 정의
+    return (
+        <Router> {/* Router로 감싸줍니다. */}
+            <div className="App">
+                <Routes> {/* Routes를 사용하여 경로 설정 */}
+                    <Route path="/" element={<Login />} /> {/* 기본 경로에 Login 컴포넌트 */}
+                    <Route path="/management" element={<Management />} /> {/* /management 경로에 Management 컴포넌트 */}
+                    <Route path="/quize" element={<QuizComponent />} /> {/* /quize 경로에 QuizComponent로 수정 */}
+                </Routes>
+                
+                {/* 여기에 공통으로 보여줄 컴포넌트나 요소를 추가할 수 있습니다. */}
+            </div>
+        </Router>
+    );
+}
 
 export default App;

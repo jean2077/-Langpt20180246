@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './ManageMent.css'; /*여기에 추가*/
-    function FormComponent() {
+import React from 'react';
+import './Manage.css'; /*여기에 추가*/
+    function Management() {
         return (
           <div>
             {/* 인사말 텍스트 */}
@@ -50,3 +50,4 @@ import './ManageMent.css'; /*여기에 추가*/
           </div>
         );
       }
+      export default Management; // 반드시 default로 내보내야 함
