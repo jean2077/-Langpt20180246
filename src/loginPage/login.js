@@ -15,6 +15,7 @@ const Login = () => {
       
         <button class="google-button">구글로 간편로그인</button>
 
+
         <div class="auth-container">
     <a href="javascript:void(0);" class="auth-link">로그인</a>
     <a href="javascript:void(0);" class="auth-link">아이디 찾기</a>
