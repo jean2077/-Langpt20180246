@@ -136,4 +136,4 @@ body, html {
     align-items: center; /* 수직 중앙 정렬 */
     justify-content: center; /* 수평 중앙 정렬 */
     transform: translateX(-50%); /* 너비의 절반만큼 왼쪽으로 이동 */
-  }
+  } 
