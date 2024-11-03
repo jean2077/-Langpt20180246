@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .hello_2 {
+    position: fixed;
+    text-align: center;
+    left: calc(50% + 10px); /* X축으로 오른쪽으로 20px 이동 */
+    top: calc(50% - 400px); /* Y축으로 아래로 100px 이동 */
+    font-family: 'Inter'; /* 폰트 설정 */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    transform: translateX(-50%);
+    width: 1500px; /* vw 대신 px 사용 */
+    height: 300px; /* vh 대신 px 사용 */
+    min-width: 300px; /* 최소 너비 설정 */
+    min-height: 200px; /* 최소 높이 설정 */
+  
+    /* ... */
+  }
+  
+  /*로그인 창
+  */
+  .chat_ractangle2 {
+    text-align: center;
+    position: relative; /* 자식 요소의 절대 위치를 위한 기준 설정 */
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(173, 216, 230, 0.8), rgba(255, 255, 255, 0.8)); /* 연한 파란색에서 흰색으로의 그라데이션 */
+    border-radius: 10px;
+    border: 2px solid #367cff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: visible;
+    margin-top: 150px;
+    z-index: 2;
+  }
+  
+  .input-field {
+    position: relative; /* 또는 relative */
+    transform: translateX(-50%); /* 수평 중앙 정렬 */
+    width: 80%; /* 너비 조정 (부모 요소의 너비 기준) */
+    max-width: 400px; /* 최대 너비 설정 */
+    height: 40px; /* 높이 조정 */
+    padding: 10px; /* 패딩 */
+    border: 1px solid #ccc; /* 테두리 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    margin-bottom: 20px; /* 아래쪽 여백 */
+    z-index: 3;
+  }
+  
+  /* 아이디 입력 필드 */
+  .input-field#id {
+    position: relative; /* 화면에 고정 */
+    top: -400px; /* 원하는 위치 */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 80%; /* 너비 조정 */
+    max-width: 400px; /* 최대 너비 설정 */
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 3;
+  }
+  
+  /* 비밀번호 입력 필드 */
+  .input-field#password {
+    position: relative; /* 화면에 고정 */
+    top: -380px; /* 원하는 위치 */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 3;
+  }
+  /* 구글 버튼 스타일 */
+  .google-button {
+    position: relative; /* 화면에 고정 */
+    top: -300px; /* 원하는 위치 */
+    left: 1%;
+    background-color: #4285F4; /* 구글 블루 */
+    color: white; /* 글자색 */
+    padding: 10px 70px; /* 패딩 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 포인터 커서 */
+    margin-top: 20px; /* 위쪽 여백 */
+    z-index: 3;
+  }
+  
+  .google-button:hover {
+    background-color: #357ae8; /* 호버 시 색상 변경 */
+  
+  }
+  
+  /*또는*/
+  
+  .divider
+  {
+    position: relative; 
+    text-align: center;
+    font-size: xx-small;
+    top: -150px;
+    left: 0%;
+    color: #000000;
+    z-index: 3;
+  } 
+  
+  /* 링크 스타일 공통 */
+  .auth-container {
+    position: relative;
+    text-align: center;
+    top: -205px;
+    color: #000000;
+    z-index: 3;
+  }
+  
+  /*로그인 아이디 찾기 비밀번호*/
+  
+  .auth-link {
+    position: relative; 
+    text-align: center;
+    top: -240px; /* 원하는 위치 */
+    left: 7%;
+    font-size: small;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 3;
+  }
+  
+  .auth-link:hover {
+    background-color: #f0f0f0;
+  }

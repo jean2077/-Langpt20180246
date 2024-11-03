@@ -1,112 +1,70 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './quizes.css'; // CSS 파일 경로 수정
 
-function Quizes() {
-    const [username, setUsername] = useState(""); // 로그인한 사용자 이름
-    const [lastStudyDate, setLastStudyDate] = useState(""); // 마지막 공부한 날짜
-    const [dailyWord, setDailyWord] = useState(""); // 오늘의 단어
-    const [dailyChianWord, setDailyChianWord] = useState(""); // 오늘의 중국어 단어
-    const [chatRooms, setChatRooms] = useState([]); // 채팅방 정보
-    const [quizData, setQuizData] = useState([]); // 퀴즈 데이터
-    const [quote, setQuote] = useState(""); // 프로이트의 격언
-
-    useEffect(() => {
-        const fetchUserData = async () => {
-            try {
-                const response = await fetch('API_URL/user');
-                const data = await response.json();
-                setUsername(data.username);
-            } catch (error) {
-                console.error("사용자 정보를 가져오는 데 오류가 발생했습니다:", error);
-            }
-        };
-
-        const fetchLastStudyDate = async () => {
-            try {
-                const response = await fetch('API_URL/lastStudyDate');
-                const data = await response.json();
-                setLastStudyDate(data.lastStudyDate);
-            } catch (error) {
-                console.error("마지막 공부한 날짜를 가져오는 데 오류가 발생했습니다:", error);
-            }
-        };
-
-        const fetchDailyWord = async () => {
-            try {
-                const response = await fetch('API_URL/dailyWord');
-                const data = await response.json();
-                setDailyWord(data.dailyWord);
-                setDailyChianWord(data.dailyChianWord);
-            } catch (error) {
-                console.error("오늘의 단어를 가져오는 데 오류가 발생했습니다:", error);
-            }
-        };
-
-        const fetchChatRooms = async () => {
-            try {
-                const response = await fetch('API_URL/chatRooms');
-                const data = await response.json();
-                setChatRooms(data);
-            } catch (error) {
-                console.error("채팅방 정보를 가져오는 데 오류가 발생했습니다:", error);
-            }
-        };
-
-        const fetchQuote = async () => {
-            try {
-                const response = await fetch('API_URL/quote');
-                const data = await response.json();
-                setQuote(data.quote);
-            } catch (error) {
-                console.error("격언을 가져오는 데 오류가 발생했습니다:", error);
-            }
-        };
-
-        fetchUserData();
-        fetchLastStudyDate();
-        fetchDailyWord();
-        fetchChatRooms();
-        fetchQuote();
-    }, []);
-
-    // "얼마나 공부했을까?" 버튼 클릭 핸들러
-    const handleStudyTimeClick = () => {
-        window.location.href = '특정페이지의_URL.html'; // 특정 웹페이지로 이동
-    };
-
+// Quizes 컴포넌트를 정의
+const App = () => {
     return (
-        <div className="div">
-            <div className="oo">
-                안녕하세요! <span id="username">{username}</span>님
-            </div>
-            
-            <div className="LastStudyDate">
-                <div className="LastStudyDateBox">
-                    <span className="_2024-10-23-1-48-12">{lastStudyDate}</span>
+              <div className="div">
+                <div className="oo">안녕하세요! oo님</div>
+                <div className="component-1">
+                  <div className="rectangle-42"></div>
+                  <div className="div3">메인화면</div>
+                  <img className="home-02" src="home-020.svg" alt="홈 아이콘" />
                 </div>
-            </div>
-
-            <div className="MoreThan">그 정도로는 늘지 않아요 더 열심히 해보세요</div>
-            <div className="Quote">{quote} - 프로이트</div>
-            
-            <div className="Today_Quize">
-                <div className="rectangle-47">
-                    <div className="div4">{dailyWord}는 중국어로?</div>
-                    <div className="div5">오늘의 퀴즈</div>
+                <div className="component-2">
+                  <div className="ellipse-1"></div>
+                  <div className="div4">새로운 채팅</div>
+                  <img className="message-plus-square" src="message-plus-square0.svg" alt="새로운 채팅 아이콘" />
                 </div>
-            </div>
-
-            {/* "얼마나 공부했을까?" 버튼 */}
-            <div className="div11">
-                <button className="studyTimeButton" onClick={handleStudyTimeClick}>
-                    얼마나 공부했을까?
-                </button>
-            </div>
-
-            {/* 나머지 컴포넌트들... */}
-        </div>
-    );
-}
-
-export default Quizes;
+                <div className="component-3">
+                  <div className="_1-21-10-24-2">
+                    1월 21 금 10: 24
+                    <br />
+                    2주전
+                  </div>
+                  <div className="rectangle-41"></div>
+                  <div className="hey-how-was-your-day">
+                    Hey, how was
+                    <br />
+                    your day?
+                  </div>
+                  <div className="lilith">Lilith</div>
+                  <div className="_1-24-10-24">
+                    1월 24 금 10: 24
+                    <br />
+                    하루전
+                  </div>
+                  <div className="rectangle-43"></div>
+                  <div className="hey-how-was-your-day2">
+                    Hey, how was
+                    <br />
+                    your day?
+                  </div>
+                  <div className="lilith2">Lilith</div>
+                </div>
+                <div className="component-4">
+                  <div className="rectangle-40"></div>
+                  <div className="div5">내 정보</div>
+                  <img className="face-id-square" src="face-id-square0.svg" alt="내 정보 아이콘" />
+                </div>
+                <div className="rectangle-17572"></div>
+                <img className="group-2" src="group-20.svg" alt="그룹 아이콘" />
+                <div className="rectangle-17574"></div>
+                <div className="div6">场照</div>
+                <div className="div7">창조하다는 중국어로?</div>
+                <div className="rectangle-17573"></div>
+                <div className="div8">创造</div>
+                <div className="rectangle-17576"></div>
+                <div className="_5">5</div>
+                <div className="component-10">
+                  <div className="rectangle-17575"></div>
+                  <div className="div9">다음으로</div>
+                </div>
+                <div className="line-5"></div>
+                <div className="_1">1</div>
+              </div>
+            );
+          };
+          
+          export default App;

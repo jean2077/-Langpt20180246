@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Manage.css'; /*여기에 추가*/
     function Management() {
         return (
