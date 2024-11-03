@@ -1,0 +1,182 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+
+.div {
+  background: #ffffff;
+  height: 1852px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangle-33 {
+  width: 451px;
+  height: 57px;
+  position: absolute;
+  left: 495px;
+  top: 1153px;
+  overflow: visible;
+}
+
+.rectangle-2 {
+  background: #fcfcfc;
+  width: 1440px;
+  height: 655px;
+  position: absolute;
+  left: -76px;
+  top: 439px;
+}
+
+.hello {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 152px;
+  top: 142px;
+  width: 1156px;
+  height: 217px;
+}
+
+.talk_box {
+  background: #d9d9d9;
+  width: 795px;
+  height: 431px;
+  position: absolute;
+  left: 306px;
+  top: 348px;
+}
+
+.talk_ballon1 {
+  height: auto;
+  position: absolute;
+  left: 306px;
+  top: 446.23px;
+  overflow: visible;
+}
+
+.talk_ballon2 {
+  height: auto;
+  position: absolute;
+  left: 1085px;
+  top: 384px;
+  transform: translate(-226px, 0px);
+  overflow: visible;
+}
+
+.talk1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 891px;
+  top: 424px;
+}
+
+.talk2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 368px;
+  top: 511px;
+}
+
+.choice_box {
+  background: #d9d9d9;
+  width: 675px;
+  height: 53px;
+  position: absolute;
+  left: 366px;
+  top: 970px;
+}
+
+.Choice_content {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 508px;
+  top: 982px;
+}
+
+.gentle_box {
+  background: #d9d9d9;
+  width: 451px;
+  height: 57px;
+  position: absolute;
+  left: 496px;
+  top: 1072px;
+}
+
+.gentle_content {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 640px;
+  top: 1167px;
+}
+
+.gentle_panda_background {
+  width: 451px;
+  height: 57px;
+  position: absolute;
+  left: 496px;
+  top: 1234px;
+  overflow: visible;
+}
+
+.Panda {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 689px;
+  top: 1248px;
+}
+
+.bad_teacher {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 650px;
+  top: 1086px;
+}
+
+.start_box {
+  background: #f35d00;
+  border-radius: 10px;
+  width: 687px;
+  height: 99px;
+  position: absolute;
+  left: 377px;
+  top: 1497px;
+}
+
+.start_box_content {
+  color: #fcfcfc;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 527px;
+  top: 1533px;
+}

@@ -1,0 +1,244 @@
+.container {
+    box-sizing: border-box;
+    background: #ffffff;
+    height: 1024px;
+    position: relative;
+    overflow: hidden;
+}
+
+.user-name {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    left: 173px;
+    top: 53px;
+    width: 1156px;
+    height: 217px;
+}
+
+.component-1,
+.component-2,
+.component-3,
+.component-4 {
+    position: absolute;
+}
+
+.component-1 {
+    width: 82px;
+    height: 78px;
+    left: 22px;
+    top: 903px;
+}
+
+.main-button {
+    background: #d9d9d9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.main-button-content {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 13.41%;
+    left: 14.63%;
+    bottom: 6.41%;
+    top: 69.23%;
+    height: 24.36%;
+}
+
+.home-02 {
+    width: 51.22%;
+    height: 50%;
+    position: absolute;
+    right: 24.39%;
+    left: 24.39%;
+    bottom: 30.77%;
+    top: 19.23%;
+}
+
+.component-2 {
+    width: 79px;
+    height: 96px;
+    left: 22px;
+    top: 777px;
+}
+
+.new-chat-button {
+    background: #d9d9d9;
+    border-radius: 50%;
+    width: 82.28%;
+    height: 64.58%;
+    position: absolute;
+    right: 7.59%;
+    left: 10.13%;
+    bottom: 35.42%;
+    top: 0%;
+}
+
+.new-chat-button-content {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    top: 80.21%;
+    height: 19.79%;
+}
+
+.message-plus-square {
+    width: 72.15%;
+    height: 58.33%;
+    position: absolute;
+    right: 12.66%;
+    left: 15.19%;
+    bottom: 38.54%;
+    top: 3.12%;
+}
+
+.component-3 {
+    width: 139px;
+    height: 205px;
+    left: -1px;
+    top: 174px;
+}
+
+.days-times,
+.days-times2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.last-message-rtg,
+.last-message-rtg2 {
+    background: #d9d9d9;
+    width: 82.01%;
+    height: 35.12%;
+    position: absolute;
+    right: 7.19%;
+    left: 10.79%;
+}
+
+.last-message,
+.last-message2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    left: 0.72%;
+    width: 99.28%;
+}
+
+.users-name,
+.lilith2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.component-4 {
+    width: 51px;
+    height: 53px;
+    position: absolute;
+    left: 21px;
+    top: 26px;
+}
+
+.my-information-box {
+    background: #d9d9d9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.my-information-content {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 13.73%;
+    left: 13.73%;
+    width: 72.55%;
+    bottom: 0;
+    top: 71.7%;
+    height: 28.3%;
+}
+
+.face-id-square {
+    width: 76.47%;
+    height: 66.04%;
+    position: absolute;
+    right: 9.8%;
+    left: 13.73%;
+    bottom: 26.42%;
+    top: 7.55%;
+    overflow: visible;
+}
+
+.result-box {
+    /* 추가 배경 요소 스타일 */
+}
+
+.result-box-message {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 604px;
+    top: 667px;
+}
+
+.how-many {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    left: 626px;
+    top: 512px;
+}
+
+.good-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    left: 678px;
+    top: 377px;
+}
