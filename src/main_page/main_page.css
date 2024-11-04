@@ -8,21 +8,23 @@ body, html {
   }
 
   .hello {
-    position: fixed;
-    text-align: center;
-    left: calc(50% + 10px); /* X축으로 오른쪽으로 20px 이동 */
-    top: calc(50% - 400px); /* Y축으로 아래로 100px 이동 */
-    font-family: 'Inter'; /* 폰트 설정 */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    transform: translateX(-50%);
-    width: 1500px; /* vw 대신 px 사용 */
-    height: 300px; /* vh 대신 px 사용 */
-    min-width: 300px; /* 최소 너비 설정 */
-    min-height: 200px; /* 최소 높이 설정 */
   
-    /* ... */
+      position: fixed;
+      text-align: center;
+      left: calc(50% + 10px); /* X축으로 오른쪽으로 20px 이동 */
+      top: calc(50% - 400px); /* Y축으로 아래로 100px 이동 */
+      font-family: 'Inter'; /* 폰트 설정 */
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      transform: translateX(-50%);
+      width: 1500px; /* vw 대신 px 사용 */
+      height: 300px; /* vh 대신 px 사용 */
+      min-width: 300px; /* 최소 너비 설정 */
+      min-height: 200px; /* 최소 높이 설정 */
+    
+      /* ... */
+  
   }
   
   
@@ -38,7 +40,7 @@ body, html {
     padding: 20px; /* 내용과 모서리 간의 여백 */
     overflow: visible; /* 내부 요소가 잘리지 않도록 설정 */
     z-index: 1; /* 채팅박스를 아래에 위치하게 설정 */
-    top: 80px;
+    top: 40px;
   }
   
   /* 왼쪽 말풍선 */

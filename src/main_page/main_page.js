@@ -13,7 +13,7 @@ function MainPage() {
       <div class="chat_ractangle"></div>
       <div class="long_rectangle"></div>
 
-      <a href="#" class="long_rectangle">
+      <a href="./login" class="long_rectangle">
     <div class="long_in_rectangle">여기를 눌러 무료로 이용해보세요.</div>
 </a>
     </div>
