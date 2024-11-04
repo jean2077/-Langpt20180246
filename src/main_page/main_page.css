@@ -130,7 +130,7 @@ body, html {
   display: flex; /* Flexbox 사용 */
   align-items: center; /* 수직 중앙 정렬 */
   justify-content: center; /* 수평 중앙 정렬 */
-  transform: translateX(-50%) translateY(-272px); /* 수평은 -50%로, 수직은 -20px만큼 이동 */
+  transform: translateX(+0%) translateY(-1px); /* 수평은 -50%로, 수직은 -20px만큼 이동 */
 
   z-index: 4;
 }
