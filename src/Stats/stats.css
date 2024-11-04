@@ -1,0 +1,677 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.graph-30 {
+  position: absolute;
+  inset: 0;
+}
+.days_avg_use_box {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 351px;
+  height: 417px;
+  position: absolute;
+  left: 1055px;
+  top: 229px;
+}
+.ellipse-17 {
+  background: #e9edf0;
+  border-radius: 50%;
+  width: 216.95px;
+  height: 209.23px;
+  position: absolute;
+  left: 1122.02px;
+  top: 340.25px;
+}
+.ellipse-18 {
+  background: #4b62ff;
+  border-radius: 50%;
+  width: 216.95px;
+  height: 209.23px;
+  position: absolute;
+  left: 1122.02px;
+  top: 340.25px;
+}
+.you_all_study_4 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 95.38px;
+  height: 20.85px;
+  position: absolute;
+  left: 1140px;
+  top: 264px;
+}
+.you_all_study {
+  color: #2e2e30;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  
+}
+.good_text {
+  color: #404040;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  left: 1144px;
+  top: 492.75px;
+  width: 166.6px;
+  height: 20.85px;
+}
+.good_text2 {
+  color: #404040;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 1104px;
+  top: 516.45px;
+  width: 247.99px;
+  height: 41.7px;
+}
+.group-2 {
+  width: 61.04px;
+  height: 58.87px;
+  position: static;
+}
+.ellipse-1 {
+  background: #eceaf8;
+  border-radius: 50%;
+  width: 61.04px;
+  height: 58.87px;
+  position: absolute;
+  left: 1199.98px;
+  top: 385.99px;
+}
+.bxs-smile {
+  width: 36.97px;
+  height: 35.65px;
+  position: absolute;
+  left: 1212.02px;
+  top: 397.6px;
+  overflow: visible;
+}
+.middle_text{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 105px;
+  top: 52px;
+  width: 1156px;
+  height: 217px;
+}
+.div6 {
+  position: absolute;
+  inset: 0;
+}
+.component-1 {
+  width: 82px;
+  height: 78px;
+  position: absolute;
+  left: 22px;
+  top: 903px;
+}
+.go_to_main_box{
+  background: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.go_to_main_content{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 13.41%;
+  left: 14.63%;
+  width: 71.95%;
+  bottom: 6.41%;
+  top: 69.23%;
+  height: 24.36%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.home-02 {
+  width: 51.22%;
+  height: 50%;
+  position: absolute;
+  right: 24.39%;
+  left: 24.39%;
+  bottom: 30.77%;
+  top: 19.23%;
+  overflow: visible;
+}
+.component-2 {
+  width: 79px;
+  height: 96px;
+  position: absolute;
+  left: 22px;
+  top: 777px;
+}
+.new_chat_box{
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 82.28%;
+  height: 64.58%;
+  position: absolute;
+  right: 7.59%;
+  left: 10.13%;
+  bottom: 35.42%;
+  top: 0%;
+}
+.new_chat_content{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 80.21%;
+  height: 19.79%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.message-plus-square {
+  width: 72.15%;
+  height: 58.33%;
+  position: absolute;
+  right: 12.66%;
+  left: 15.19%;
+  bottom: 38.54%;
+  top: 3.12%;
+  overflow: visible;
+}
+.last_study_days {
+  width: 139px;
+  height: 205px;
+  position: absolute;
+  left: -1px;
+  top: 174px;
+}
+.days-times{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  position: absolute;
+  right: 20.14%;
+  left: 23.02%;
+  width: 56.83%;
+  bottom: 52.2%;
+  top: 35.12%;
+  height: 12.68%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.last_message_box{
+  background: #d9d9d9;
+  width: 82.01%;
+  height: 35.12%;
+  position: absolute;
+  right: 7.91%;
+  left: 10.07%;
+  bottom: 64.88%;
+  top: 0%;
+}
+.last_message_content{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 0.72%;
+  left: 0%;
+  width: 99.28%;
+  bottom: 66.34%;
+  top: 13.66%;
+  height: 20%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.user_name{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 58.27%;
+  left: 15.83%;
+  width: 25.9%;
+  bottom: 87.8%;
+  top: 2.93%;
+  height: 9.27%;
+}
+.days-times2
+{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  position: absolute;
+  right: 19.42%;
+  left: 23.02%;
+  width: 57.55%;
+  bottom: 0%;
+  top: 87.32%;
+  height: 12.68%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.last_message_box1{
+  background: #d9d9d9;
+  width: 82.01%;
+  height: 35.12%;
+  position: absolute;
+  right: 7.19%;
+  left: 10.79%;
+  bottom: 12.68%;
+  top: 52.2%;
+}
+.last_message_content1 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0.72%;
+  width: 99.28%;
+  bottom: 14.15%;
+  top: 65.85%;
+  height: 20%;
+}
+.user_name2{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 57.55%;
+  left: 16.55%;
+  width: 25.9%;
+  bottom: 35.61%;
+  top: 55.12%;
+  height: 9.27%;
+}
+.component-4 {
+  width: 51px;
+  height: 53px;
+  position: absolute;
+  left: 21px;
+  top: 26px;
+}
+.my_information_box{
+  background: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.my_information_content {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 13.73%;
+  left: 13.73%;
+  width: 72.55%;
+  bottom: 0%;
+  top: 71.7%;
+  height: 28.3%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.face-id-square {
+  width: 76.47%;
+  height: 66.04%;
+  position: absolute;
+  right: 9.8%;
+  left: 13.73%;
+  bottom: 26.42%;
+  top: 7.55%;
+  overflow: visible;
+}
+.graph-3 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-12 {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 351px;
+  height: 417px;
+  position: absolute;
+  left: 177px;
+  top: 229px;
+}
+.line-3 {
+  margin-top: -0.5px;
+  border-style: solid;
+  border-color: #b1b1b1;
+  border-width: 0.5px 0 0 0;
+  opacity: 0.5;
+  width: 308.41px;
+  height: 0px;
+  position: absolute;
+  left: 198.29px;
+  top: 551.13px;
+}
+.group-4 {
+  width: 297.75px;
+  height: 146.98px;
+  position: static;
+}
+
+.today {
+  color: #767676;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  left: 463.22px;
+  top: 504.53px;
+  width: 38.15px;
+  height: 14.72px;
+}
+
+.how_to_time_days {
+  color: #2e2e30;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 304.81px;
+  top: 257.8px;
+  width: 95.38px;
+  height: 29.44px;
+}
+.days_avg_use
+{
+  color: #2e2e30;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 238.04px;
+  top: 289.13px;
+  width: 228.91px;
+  height: 18.4px;
+}
+.days_avg_use_line-4 {
+  width: 11.43px;
+  height: 0px;
+  position: absolute;
+  left: 416.32px;
+  top: 267.96px;
+  overflow: visible;
+}
+.graph-27 {
+  position: absolute;
+  inset: 0;
+}
+.use_week_chat_content_coment {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 351px;
+  height: 417px;
+  position: absolute;
+  left: 616px;
+  top: 223px;
+}
+.group-13 {
+  width: 237.39px;
+  height: 228.94px;
+  position: static;
+}
+.ellipse-172 {
+  background: #e9edf0;
+  border-radius: 50%;
+  width: 216.95px;
+  height: 209.23px;
+  position: absolute;
+  left: 683.02px;
+  top: 326.89px;
+}
+.ellipse-182 {
+  background: #3a5afe;
+  border-radius: 50%;
+  width: 237.39px;
+  height: 228.94px;
+  position: absolute;
+  left: 672.8px;
+  top: 317.03px;
+}
+.group-22 {
+  width: 40.05px;
+  height: 38.63px;
+  position: static;
+}
+.ellipse-13 {
+  background: #eceaf8;
+  border-radius: 50%;
+  opacity: 0.9;
+  width: 40.05px;
+  height: 38.63px;
+  position: absolute;
+  left: 771.47px;
+  top: 368.01px;
+}
+.mdi-user {
+  width: 30.52px;
+  height: 29.44px;
+  position: absolute;
+  left: 776.67px;
+  top: 372.61px;
+  overflow: visible;
+}
+.use_week_chat_box{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 179.32px;
+  height: 20.85px;
+  position: absolute;
+  left: 708.84px;
+  top: 256.9px;
+}
+.use_week_chat_content_number{
+  color: #404040;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 753.35px;
+  top: 411.13px;
+  width: 76.3px;
+  height: 44.15px;
+}
+.use_week_chat_content_coment {
+  color: #404040;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  left: 750.8px;
+  top: 465.25px;
+  width: 81.39px;
+  height: 20.85px;
+}
+.all_use_time {
+  color: #2e2e30;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 1130px;
+  top: 298px;
+  width: 110px;
+  height: 29px;
+}
+.component-7 {
+  width: 318px;
+  height: 262px;
+  position: absolute;
+  left: 187px;
+  top: 708px;
+}
+.any_other_doing_box{
+  background: #f6f1f1;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.any_other_doing {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  right: 16.98%;
+  left: 19.5%;
+  width: 63.52%;
+  bottom: 0%;
+  top: 78.24%;
+  height: 21.76%;
+}
+.any_other_doing_image {
+  width: 67.61%;
+  height: 58.02%;
+  position: absolute;
+  right: 16.67%;
+  left: 15.72%;
+  bottom: 38.55%;
+  top: 3.44%;
+  object-fit: cover;
+}
+.any_other_doing_something {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  right: 31.76%;
+  left: 27.99%;
+  width: 40.25%;
+  bottom: 25.57%;
+  top: 65.27%;
+  height: 9.16%;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+.man_time_box {
+  background: #f6f1f1;
+  border-radius: 40px;
+  width: 318px;
+  height: 262px;
+  position: absolute;
+  left: 1071px;
+  top: 708px;
+}
+.man_time_content{
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  left: 1104px;
+  top: 898px;
+  width: 266px;
+  height: 116px;
+}
+.any_other_doing_img{
+  width: 206.72px;
+  height: 152px;
+  position: absolute;
+  left: 1128px;
+  top: 721px;
+  object-fit: cover;
+  z-index: 10; /* 높은 값으로 설정하여 상위 레이어로 이동 */
+}
+.any_other_doing_on_text {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 245px;
+  top: 689px;
+}
+.how_to_time_days_out_rectangle {
+  width: 300px;                 /* 가로 길이 */
+  height: 400px;                /* 세로 길이 */
+  border: 1px solid #333;       /* 테두리 색상 및 두께 */
+  background-color: transparent; /* 배경 투명 */
+  position: absolute;           /* 절대 위치 지정 */
+  left: 200px;                  /* 페이지의 왼쪽에서 245px 떨어짐 */
+  top: 235px;   
+  border-radius: 30px; /* 동글동글한 모서리 추가 */               
+}
+.use_week_chat_rectangle {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #333;
+  background-color: transparent;
+  position: absolute;
+  left: 640px; /* 245px에서 600px로 변경해 두 박스 사이 간격 확보 */
+  top: 235px;
+  border-radius: 30px; /* 동글동글한 모서리 추가 */
+}
+.you_all_study_rectangle {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #333;
+  background-color: transparent;
+  position: absolute;
+  left: 1071px; /* 245px에서 600px로 변경해 두 박스 사이 간격 확보 */
+  top: 235px;
+  border-radius: 30px; /* 동글동글한 모서리 추가 */
+}
