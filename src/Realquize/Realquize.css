@@ -2,13 +2,15 @@
 .div * {
   box-sizing: border-box;
 }
+
 .div {
   background: #ffffff;
   height: 1024px;
   position: relative;
   overflow: hidden;
 }
-.oo {
+
+.user_name3 {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -20,11 +22,7 @@
   width: 1156px;
   height: 217px;
 }
-.div2 {
-  opacity: 0.9;
-  position: absolute;
-  inset: 0;
-}
+
 .component-1 {
   width: 82px;
   height: 78px;
@@ -32,7 +30,8 @@
   left: 22px;
   top: 903px;
 }
-.rectangle-42 {
+
+.go_to_main_box {
   background: #d9d9d9;
   width: 100%;
   height: 100%;
@@ -42,7 +41,8 @@
   bottom: 0%;
   top: 0%;
 }
-.div3 {
+
+.go_to_main_content {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -54,8 +54,9 @@
   width: 71.95%;
   bottom: 6.41%;
   top: 69.23%;
-  height: 24.36%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
+
 .home-02 {
   width: 51.22%;
   height: 50%;
@@ -66,6 +67,7 @@
   top: 19.23%;
   overflow: visible;
 }
+
 .component-2 {
   width: 79px;
   height: 96px;
@@ -73,7 +75,8 @@
   left: 22px;
   top: 777px;
 }
-.ellipse-1 {
+
+.new_chat_box {
   background: #d9d9d9;
   border-radius: 50%;
   width: 82.28%;
@@ -84,7 +87,8 @@
   bottom: 35.42%;
   top: 0%;
 }
-.div4 {
+
+.new_chat_content {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -97,7 +101,9 @@
   bottom: 0%;
   top: 80.21%;
   height: 19.79%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
+
 .message-plus-square {
   width: 72.15%;
   height: 58.33%;
@@ -108,6 +114,7 @@
   top: 3.12%;
   overflow: visible;
 }
+
 .component-3 {
   width: 139px;
   height: 205px;
@@ -115,7 +122,8 @@
   left: -1px;
   top: 174px;
 }
-._1-21-10-24-2 {
+
+.last_study_days {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -129,7 +137,8 @@
   top: 35.12%;
   height: 12.68%;
 }
-.rectangle-41 {
+
+.chat_box {
   background: #d9d9d9;
   width: 82.01%;
   height: 35.12%;
@@ -139,7 +148,8 @@
   bottom: 64.88%;
   top: 0%;
 }
-.hey-how-was-your-day {
+
+.chat_content {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -152,8 +162,10 @@
   bottom: 66.34%;
   top: 13.66%;
   height: 20%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
-.lilith {
+
+.user_name {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -167,7 +179,8 @@
   top: 2.93%;
   height: 9.27%;
 }
-._1-24-10-24 {
+
+.last_study_days1 {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -178,10 +191,11 @@
   left: 23.02%;
   width: 57.55%;
   bottom: 0%;
-  top: 87.32%;
+  top: 92.32%;
   height: 12.68%;
 }
-.rectangle-43 {
+
+.chat_box2 {
   background: #d9d9d9;
   width: 82.01%;
   height: 35.12%;
@@ -189,9 +203,10 @@
   right: 7.19%;
   left: 10.79%;
   bottom: 12.68%;
-  top: 52.2%;
+  top: 57.2%;
 }
-.hey-how-was-your-day2 {
+
+.chat_content2 {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -202,10 +217,12 @@
   left: 0.72%;
   width: 99.28%;
   bottom: 14.15%;
-  top: 65.85%;
+  top: 70.85%;
   height: 20%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
-.lilith2 {
+
+.user_name1 {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -216,9 +233,10 @@
   left: 16.55%;
   width: 25.9%;
   bottom: 35.61%;
-  top: 55.12%;
+  top: 60.12%;
   height: 9.27%;
 }
+
 .component-4 {
   width: 51px;
   height: 53px;
@@ -226,7 +244,8 @@
   left: 21px;
   top: 26px;
 }
-.rectangle-40 {
+
+.my_information_box {
   background: #d9d9d9;
   width: 100%;
   height: 100%;
@@ -236,7 +255,8 @@
   bottom: 0%;
   top: 0%;
 }
-.div5 {
+
+.my_information_content {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -249,7 +269,9 @@
   bottom: 0%;
   top: 71.7%;
   height: 28.3%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
+
 .face-id-square {
   width: 76.47%;
   height: 66.04%;
@@ -260,7 +282,8 @@
   top: 7.55%;
   overflow: visible;
 }
-.rectangle-17572 {
+
+.real_quize_box {
   background: #fffefe;
   border-radius: 20px;
   border-style: solid;
@@ -273,6 +296,7 @@
   top: 174px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .group-2 {
   height: auto;
   position: absolute;
@@ -280,7 +304,8 @@
   bottom: 688px;
   overflow: visible;
 }
-.rectangle-17574 {
+
+.real_quize_china {
   background: #3eaef3;
   border-radius: 20px;
   width: 517px;
@@ -289,7 +314,8 @@
   left: 823px;
   top: 609px;
 }
-.div6 {
+
+.true_word {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -299,7 +325,8 @@
   left: 1042px;
   top: 653px;
 }
-.div7 {
+
+.korea_word {
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -309,6 +336,7 @@
   left: 599px;
   top: 229px;
 }
+
 .rectangle-17573 {
   background: var(--2, #3eaef3);
   border-radius: 20px;
@@ -318,7 +346,8 @@
   left: 249px;
   top: 609px;
 }
-.div8 {
+
+.fale_word { /* 변경된 클래스 이름 */
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -328,6 +357,7 @@
   left: 468px;
   top: 653px;
 }
+
 .rectangle-17576 {
   background: #d9d9d9;
   border-radius: 40px;
@@ -337,7 +367,8 @@
   left: 775px;
   top: 1008px;
 }
-._5 {
+
+.all_page { /* 변경된 클래스 이름 */
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -347,6 +378,7 @@
   left: 817px;
   top: 1005px;
 }
+
 .component-10 {
   width: 154px;
   height: 25px;
@@ -354,6 +386,7 @@
   left: 729px;
   top: 979px;
 }
+
 .rectangle-17575 {
   background: #d9d9d9;
   border-radius: 40px;
@@ -365,7 +398,8 @@
   bottom: 0%;
   top: 0%;
 }
-.div9 {
+
+.next_box_content { /* 변경된 클래스 이름 */
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -378,7 +412,9 @@
   bottom: 12%;
   top: 12%;
   height: 76%;
+  white-space: nowrap; /* 줄바꿈 방지 */
 }
+
 .line-5 {
   margin-top: -1px;
   border-style: solid;
@@ -392,7 +428,8 @@
   transform-origin: 0 0;
   transform: rotate(90deg) scale(1, 1);
 }
-._1 {
+
+.now_page { /* 변경된 클래스 이름 */
   color: #000000;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;

@@ -8,6 +8,7 @@ import QuizComponent from "../Quize/quizes"; // QuizComponent로 수정
 import RealQuize from "../Realquize/Realquize"; // RealQuize 컴포넌트 임포트
 import MainPage from "../main_page/main_page";
 import Result_page from "../Reult_page/Result_page";
+import First_login_page from '../First_login_page/First_login_page';
 function App() {  // App 컴포넌트를 함수로 정의
     return (
         <Router> {/* Router로 감싸줍니다. */}
