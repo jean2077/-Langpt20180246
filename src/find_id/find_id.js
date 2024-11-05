@@ -1,32 +1,24 @@
 import React from 'react';
 import './find_id.css'; // 스타일 시트 임포트
 
-const FindId = () => {
-    return (
-       
-       <div class="container">
-        <div class="hello_2">안녕하세요! hello! 你好！</div>    
-        <div class="chat_ractangle2">똑똑한 당신만의 언어 선생님을 무료로 사용해보세요.</div>
-        
-        <div class="divider">또는</div>
-
-        <input type="text" id="id" placeholder="아이디" className="input-field" />
-         <input type="password" id="password" placeholder="비밀번호" className="input-field" />
-      
-        <button class="google-button">구글로 간편로그인</button>
 
 
-        <div class="auth-container">
-    <a href="javascript:void(0);" class="auth-link">로그인</a>
-    <a href="javascript:void(0);" class="auth-link">아이디 찾기</a>
-    <a href="javascript:void(0);" class="auth-link">비밀번호 찾기</a>
-    <a href="/choice_mem_type"   class="newmember-button">회원가입</a>
-</div>
+function FindId() {
+return (
 
+        <div className="find_id">
+          <div className='find_id_word'>아이디 찾기</div>
+          <div className='find_id_word_small'>이메일을 입력해 회원가입여부를 확인하세요.</div>
+          <div className="chat_rectangle_find_id"></div> 
+          <input type="text" id="id" placeholder="아이디를 입력하세요 ex) langpt@langpt.com" className="find_input_field" />
+          <button class="find_id_button">아이디 찾기</button>
 
-    </div>
-
-    );
-};
+          <div class="auth-container_find_id">
+          <a href="./login" class="auth-link_find_id">로그인으로 돌아가기</a>
+          <a href="./find_password" class="auth-link_find_id">비밀번호 찾기</a>
+        </div>
+        </div>
+       );
+}
 
 export default FindId; // 기본 내보내기
