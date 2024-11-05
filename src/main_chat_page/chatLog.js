@@ -1,4 +1,3 @@
-// src/main_chat_page/ChatLog.js
 import React from 'react';
 
 const messages = [
