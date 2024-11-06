@@ -1,0 +1,202 @@
+.user_name_qz {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute; /* 위치 설정 */
+  left: 50%; /* 화면 가운데 정렬 */
+  top: 52px;
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+  width: 1156px;
+  height: 217px;
+
+}
+
+.middle_box_qz {
+  background: #ec9f23;
+  border-radius: 20px;
+  width: 1000px;
+  height: 200px; /* 높이를 더 크게 설정 */
+  position: absolute; /* 위치 설정 */
+  left: 50%; /* 화면 가운데 정렬 */
+  top: calc(10px + 217px); /* user_name_qz 아래에 배치, 여백 20px 추가 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+  
+}
+
+.middle_box_content {
+  position: absolute; /* 부모 박스를 기준으로 절대 위치 */
+  top: 50%; /* 세로 중앙 정렬 */
+  left: 50%; /* 가로 중앙 정렬 */
+  transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
+  width: 100%; /* 부모 박스의 너비에 맞추기 */
+  height: 150%; /* 부모 박스의 높이에 맞추기 */
+  background: #ffffff; /* 배경을 흰색으로 설정 */
+  color: white; /* 글자 색을 검정색으로 설정 */
+  font-size: 35px; /* 글자 크기 크게 설정 */
+  text-align: center; /* 글자 가운데 정렬 */
+  line-height: 300px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
+  background: transparent; /* 배경을 투명하게 설정 */
+}
+
+.more_than_qz {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;  /* 절대 위치로 설정 */
+  left: 50%;  /* 가운데 정렬 */
+  top: calc(200px + 20px);  /* middle_box_qz 아래에 20px 여백 추가 */
+  transform: translateX(-50%);  /* 가로 방향 가운데 정렬 */
+}
+
+.quote_qz {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;  /* 절대 위치로 설정 */
+  left: 50%;  /* 가운데 정렬 */
+  top: calc(200px + 20px + 32px + 20px); /* more_than_qz 아래에 32px 글자 크기와 20px 여백 추가 */
+  transform: translateX(-50%);  /* 가로 방향 가운데 정렬 */
+  width: 872px;  /* 너비 설정 */
+  height: 92px;  /* 높이 설정 */
+}
+
+
+.main_quize_box_qz {
+  background: #367cff;
+  border-radius: 20px;
+  width: 30%; /* 너비를 60%로 줄임 */
+  height: 120%; /* 높이를 150px로 줄임 */
+  position: absolute;
+  left: 50%; /* 화면 가운데 정렬 */
+  top: calc(200px + 20px + 32px + 20px + 92px + 20px); /* quote_qz 아래에 배치 */
+  transform: translateX(-50%); /* 가로 가운데 정렬 */
+}
+.main_quize_box_content_today_qz {
+  color: white; /* 텍스트 색을 흰색으로 설정 */
+  font-size: 24px; /* 글자 크기 설정 */
+  font-weight: 400; /* 글자 두께 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin-top: 40px; /* 위쪽 여백을 추가하여 아래로 이동 */
+}
+.main_quize_box_content_today_word_qz{
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  top: 50px; /* 첫 번째 텍스트 아래로 30px 내려서 배치 */
+}
+/* 워드 박스 */
+.word_box_qz {
+  background: #367cff;
+  border-radius: 20px;
+  width: 25%; /* 너비를 30%로 설정 */
+  height: 100%; /* 높이를 120%로 설정 */
+  position: absolute;
+  left: 0; /* 왼쪽 정렬 */
+  top: calc(200px + 20px + 32px + 20px + 92px + 20px); /* quote_qz 아래에 배치 */
+  padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+}
+
+.today_word_qz {
+  color: white; /* 텍스트 색을 흰색으로 설정 */
+  font-size: 24px; /* 글자 크기 설정 */
+  font-weight: 400; /* 글자 두께 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin-top: 20px; /* 위쪽 여백을 추가하여 아래로 이동 */
+}
+.today_word_chian_qz {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  top: 50px; /* 첫 번째 텍스트 아래로 30px 내려서 배치 */
+}
+.how_study_box_qz{
+  background: #367cff;
+  border-radius: 20px;
+  width: 25%; /* 너비를 30%로 설정 */
+  height: 100%; /* 높이를 120%로 설정 */
+  position: absolute;
+  right: 0; /* 왼쪽 정렬 */
+  top: calc(200px + 20px + 32px + 20px + 92px + 20px); /* quote_qz 아래에 배치 */
+  padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+}
+.how_study_box_content_qz{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 80px; /* 첫 번째 텍스트 아래로 30px 내려서 배치 */
+}
+/* 채팅 박스 - 사이드바 상태에 따라 너비 조정 */
+.chat_ractangle_mainChat.sidebar-open_qz {
+  width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
+  margin-left: 250px;
+}
+
+.chat_ractangle_mainChat.sidebar-closed_qz {
+  width: 100vw; /* 전체 화면 너비 */
+  margin-left: 0;
+}
+
+/* 사이드바 열기 버튼 */
+.open-sidebar-button_qz {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #367cff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* 항상 최상단에 표시 */
+}
+
+/* 입력창 스타일 - 기본 */
+.chat-input-section_qz {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  left: 35%;
+  border-top: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 60%;
+  z-index: 9;
+  transition: margin-left 0.3s ease;
+}
+
+.chat-input_qz {
+  width: 50%; /* 필요시 입력창의 가로 길이 조정 */
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.send-button_qz {
+  padding: 10px 20px;
+  background-color: #367cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  min-width: 80px; /* 버튼 최소 너비 설정 */
+}
+
+
+
