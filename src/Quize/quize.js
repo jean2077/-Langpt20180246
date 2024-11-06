@@ -38,6 +38,7 @@ function Quize() {
                 <div className="main_quize_box_qz">
                     <div className="main_quize_box_content_today_qz">오늘의 단어는?</div>
                     <div className="main_quize_box_content_today_word_qz">db에서 받아올 오늘의 단어</div>
+                    
                 </div>
                 <div className="word_box_qz">
                     <div className="today_word_qz">오늘의 단어</div>
@@ -47,7 +48,9 @@ function Quize() {
                 <div className="how_study_box_qz" onClick={handleStudyBoxClick}>
                     <div className="how_study_box_content_qz">왜안나오는데</div>
                 </div>
+                
             </div>
+            
         </div>
     );
 }

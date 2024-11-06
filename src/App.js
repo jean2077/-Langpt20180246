@@ -9,6 +9,7 @@ import MainChatPage from './main_chat_page/main_chat_page'
 import Quize from './Quize/quize';
 import Realquize from './realquize/realquizes';
 import Stats from './Stats/stats';
+import ResultPage from './resultPage/resultpage'
 
 
 // app.js는 라우터 기능을 하고 있으므로 절대 변경금지
@@ -26,6 +27,8 @@ function App() {
           <Route path="/quize" element={<Quize />} /> 
           <Route path="/realquize" element={<Realquize />} />
           <Route path="/stats" element={<Stats />} />
+          <Route path="/resultpage" element={<ResultPage />} />
+
 
         </Routes>
       </div>
