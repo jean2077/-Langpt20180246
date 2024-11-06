@@ -1,0 +1,232 @@
+.user_name_rq {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 52px;
+    transform: translateX(-50%);
+    width: 100%; /* 가로 방향 전체 너비 사용 */
+    max-width: 1156px; /* 최대 너비 설정 */
+    height: 217px;
+  }
+  .big_box_rtg {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0); /* 완전 투명하게 설정 */
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #4157c6;
+    border-width: 4px;
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.real_quize_box_rq {
+    background: #367CFF;
+    border-radius: 20px;
+    width: 400px;
+    height: 120px; /* 높이를 더 크게 설정 */
+    position: absolute; /* 위치 설정 */
+    left: 50%; /* 화면 가운데 정렬 */
+    top: calc(10px); /* user_name_qz 아래에 배치, 여백 20px 추가 */
+    transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+        
+}
+
+.real_quize_china_rq {
+    position: absolute; /* 부모 박스를 기준으로 절대 위치 */
+    top: 50%; /* 세로 중앙 정렬 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
+    width: 100%; /* 부모 박스의 너비에 맞추기 */
+    height: 150%; /* 부모 박스의 높이에 맞추기 */
+    background: #ffffff; /* 배경을 흰색으로 설정 */
+    color: black; /* 글자 색을 흰색으로 설정 */
+    font-size: 35px; /* 글자 크기 크게 설정 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 180px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
+    background: transparent; /* 배경을 투명하게 설정 */
+    font-weight: 500; /* 100에서 900까지, 숫자가 클수록 굵어집니다 */
+}
+
+.true_word_box_rq {
+    background: #3EAEF3;
+    border-radius: 20px;
+    width: 35%; /* 너비를 30%로 설정 */
+    height: 15%; /* 높이를 120%로 설정 */
+    position: absolute;
+    left: 0; /* left 값을 0으로 설정 */
+    margin-left: 20px; /* 왼쪽에 20px의 여백을 추가 */
+    top: calc(200px + 20px + 32px + 20px + 92px - 50px); /* 위로 적절히 조정 */
+    padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+}
+
+.true_word_rq{
+    position: absolute; /* 부모 박스를 기준으로 절대 위치 */
+    top: 50%; /* 세로 중앙 정렬 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
+    width: 100%; /* 부모 박스의 너비에 맞추기 */
+    height: 150%; /* 부모 박스의 높이에 맞추기 */
+    background: #ffffff; /* 배경을 흰색으로 설정 */
+    color: white; /* 글자 색을 흰색으로 설정 */
+    font-size: 35px; /* 글자 크기 크게 설정 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 180px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
+    background: transparent; /* 배경을 투명하게 설정 */
+    font-weight: 500; /* 100에서 900까지, 숫자가 클수록 굵어집니다 */
+}
+.fale_word_box_rq{
+    background: #3EAEF3;
+    border-radius: 20px;
+    width: 35%; /* 너비를 30%로 설정 */
+    height: 15%; /* 높이를 120%로 설정 */
+    position: absolute;
+    right: 0; /* left 값을 0으로 설정 */
+    margin-right: 30px; /* 왼쪽에 20px의 여백을 추가 */
+    top: calc(200px + 20px + 32px + 20px + 92px - 50px); /* 위로 적절히 조정 */
+    padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+  }
+  .fale_word_rq{
+    position: absolute; /* 부모 박스를 기준으로 절대 위치 */
+    top: 50%; /* 세로 중앙 정렬 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
+    width: 100%; /* 부모 박스의 너비에 맞추기 */
+    height: 150%; /* 부모 박스의 높이에 맞추기 */
+    background: #ffffff; /* 배경을 흰색으로 설정 */
+    color: white; /* 글자 색을 흰색으로 설정 */
+    font-size: 35px; /* 글자 크기 크게 설정 */
+    text-align: center; /* 글자 가운데 정렬 */
+    line-height: 180px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
+    background: transparent; /* 배경을 투명하게 설정 */
+    font-weight: 500; /* 100에서 900까지, 숫자가 클수록 굵어집니다 */
+  }
+  .chat_ractangle_mainChat.sidebar-open_rq {
+    width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
+    margin-left: 250px;
+  }
+  
+  .chat_ractangle_mainChat.sidebar-closed_rq {
+    width: 100vw; /* 전체 화면 너비 */
+    margin-left: 0;
+  }
+  
+  /* 사이드바 열기 버튼 */
+  .open-sidebar-button_rq {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #367cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* 항상 최상단에 표시 */
+  }
+  
+  /* 입력창 스타일 - 기본 */
+  .chat-input-section_rq {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    left: 35%;
+    border-top: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    z-index: 9;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .chat-input_rq {
+    width: 50%; /* 필요시 입력창의 가로 길이 조정 */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .send-button_rq {
+    padding: 10px 20px;
+    background-color: #367cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    min-width: 80px; /* 버튼 최소 너비 설정 */
+  }
+  /* 페이지네이션 박스 */
+.page_box_rq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* 페이지네이션 버튼들 */
+  .page_box_rq button {
+    background-color: #4157c6; /* 버튼 배경색 */
+    color: white; /* 글자 색 */
+    border: none; /* 기본 테두리 제거 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    padding: 8px 15px; /* 버튼 내부 여백 */
+    cursor: pointer; /* 마우스 커서 */
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* 페이지네이션 버튼 hover 시 스타일 */
+  .page_box_rq button:hover {
+    background-color: #354a94; /* hover 시 배경색 변경 */
+    transform: scale(1.05); /* hover 시 버튼 크기 약간 확대 */
+  }
+  
+  /* 비활성화된 페이지네이션 버튼 (disabled) */
+  .page_box_rq button:disabled {
+    background-color: #d1d1d1; /* 비활성화된 버튼 배경색 */
+    cursor: not-allowed; /* 비활성화 시 커서 변경 */
+  }
+  
+  /* '다음' 버튼 */
+  .next_box_rq {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .next_box_rq button {
+    background-color: #4157c6; /* '다음' 버튼 배경색 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* '다음' 버튼 hover 시 스타일 */
+  .next_box_rq button:hover {
+    background-color: #354a94;
+    transform: scale(1.05);
+  }
+  
+  /* 비활성화된 '다음' 버튼 */
+  .next_box_rq button:disabled {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+  }
+  

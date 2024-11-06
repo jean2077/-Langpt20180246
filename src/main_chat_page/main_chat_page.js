@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './main_chat_page.css';
 import Sidebar from './sidebar';
-
+import ChatLog from './chatLog';
 function MainChatPage() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [messages, setMessages] = useState([]);
