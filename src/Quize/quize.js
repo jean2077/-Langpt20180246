@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // 페이지 이동을 위한 useNavigate import
 import './quize.css';
-import Sidebar_qz from './sidebar_qz'; // Sidebar_qz 컴포넌트를 올바르게 import
-//import { useNavigate } from 'react-router-dom';
+import Sidebar_qz from './sidebar_qz'; // Sidebar_qz 컴포넌트
 
 function Quize() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const navigate = useNavigate(); // 페이지 이동을 위한 navigate 함수 사용
 
     const handleOpenSidebar = () => {
         setIsSidebarOpen(true);
@@ -13,14 +14,16 @@ function Quize() {
     const handleCloseSidebar = () => {
         setIsSidebarOpen(false);
     };
-    //const handleStudyBoxClick = () => {
-        //navigate('/study'); // 이동할 경로 설정 (예: "/study")
-   // };
+
+    // 하우 스터디 박스를 클릭했을 때 Stats 페이지로 이동하는 함수
+    const handleStudyBoxClick = () => {
+        navigate('/stats'); // '/stats' 경로로 이동
+    };
 
     return (
         <div className="Quize">
             {isSidebarOpen ? (
-                <Sidebar_qz setIsSidebarOpen={setIsSidebarOpen} /> // 올바른 Sidebar_qz 컴포넌트 사용
+                <Sidebar_qz setIsSidebarOpen={setIsSidebarOpen} /> // Sidebar 컴포넌트
             ) : (
                 <button className="open-sidebar-button" onClick={handleOpenSidebar}>
                     사이드바 열기
@@ -40,7 +43,8 @@ function Quize() {
                     <div className="today_word_qz">오늘의 단어</div>
                     <div className="today_word_chian_qz">db 오늘의 중국어</div>
                 </div>
-                <div className="how_study_box_qz">
+                {/* 하우 스터디 박스를 클릭 시 Stats 페이지로 이동 */}
+                <div className="how_study_box_qz" onClick={handleStudyBoxClick}>
                     <div className="how_study_box_content_qz">왜안나오는데</div>
                 </div>
             </div>
