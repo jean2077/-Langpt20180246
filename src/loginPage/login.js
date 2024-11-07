@@ -18,8 +18,8 @@ const Login = () => {
 
         <div class="auth-container">
     <a href="javascript:void(0);" class="auth-link">로그인</a>
-    <a href="javascript:void(0);" class="auth-link">아이디 찾기</a>
-    <a href="javascript:void(0);" class="auth-link">비밀번호 찾기</a>
+    <a href="./find_id" class="auth-link">아이디 찾기</a>
+    <a href="./find_password" class="auth-link">비밀번호 찾기</a>
     <a href="/choice_mem_type"   class="newmember-button">회원가입</a>
 </div>
 
