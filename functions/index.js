@@ -1,19 +1,27 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+const functions = require("firebase-functions");
+const axios = require("axios");
 
-const {onRequest} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
+// GPT-4 API 호출 함수
+exports.fineTuneModel = functions.https.onRequest(async (req, res) => {
+  try {
+    const response = await axios.post(
+      "https://api.openai.com/v1/fine-tunes",
+      {
+        training_file: req.body.training_file,
+        model: "gpt-4",
+        n_epochs: 4,
+      },
+      {
+        headers: {
+          "Authorization": `Bearer ${functions.config().openai.api_key}`,
+          "Content-Type": "application/json",
+        },
+      },
+    );
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
-
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+    res.status(200).send(response.data);
+  } catch (error) {
+    console.error("Error calling GPT-4 API:", error);
+    res.status(500).send("Error occurred while fine-tuning the model.");
+  }
+});
