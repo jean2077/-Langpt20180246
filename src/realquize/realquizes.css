@@ -72,7 +72,7 @@
     left: 50%; /* 가로 중앙 정렬 */
     transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
     width: 100%; /* 부모 박스의 너비에 맞추기 */
-    height: 150%; /* 부모 박스의 높이에 맞추기 */
+    height: 200%; /* 부모 박스의 높이에 맞추기 */
     background: #ffffff; /* 배경을 흰색으로 설정 */
     color: white; /* 글자 색을 흰색으로 설정 */
     font-size: 35px; /* 글자 크기 크게 설정 */
@@ -98,7 +98,7 @@
     left: 50%; /* 가로 중앙 정렬 */
     transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
     width: 100%; /* 부모 박스의 너비에 맞추기 */
-    height: 150%; /* 부모 박스의 높이에 맞추기 */
+    height: 200%; /* 부모 박스의 높이에 맞추기 */
     background: #ffffff; /* 배경을 흰색으로 설정 */
     color: white; /* 글자 색을 흰색으로 설정 */
     font-size: 35px; /* 글자 크기 크게 설정 */
@@ -106,6 +106,14 @@
     line-height: 180px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
     background: transparent; /* 배경을 투명하게 설정 */
     font-weight: 500; /* 100에서 900까지, 숫자가 클수록 굵어집니다 */
+  }
+  .true_word_box_rq.selected, .fale_word_box_rq.selected {
+    background-color: #1E88E5; 
+    color: #fff;
+    border-color: #1E88E5;
+  }
+  .complete_button_rq{
+
   }
   .chat_ractangle_mainChat.sidebar-open_rq {
     width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
