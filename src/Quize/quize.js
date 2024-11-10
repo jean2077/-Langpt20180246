@@ -54,7 +54,7 @@ function Quize() {
                     <div className="how_study_box_content_qz">얼마나 공부헀을까요?</div>
                 </div>
 
-                <button className="go-to-realquizes-button" onClick={handleGoToRealQuizesClick}>
+                <button className="go-to-realquizes-button_box_qz" onClick={handleGoToRealQuizesClick}>
                     <div className="go-to-realquizes-button_content_qz">단어퀴즈로</div>
                 </button>
             </div>

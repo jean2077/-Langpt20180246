@@ -81,6 +81,7 @@
     text-align: center; /* 글자 가운데 정렬 */
     line-height: 300px; /* 높이 300px에 맞게 line-height 설정 (세로 중앙 정렬) */
     background: transparent; /* 배경을 투명하게 설정 */
+    cursor: pointer;
 }
 
 /* 채팅 박스 - 사이드바 상태에 따라 너비 조정 */

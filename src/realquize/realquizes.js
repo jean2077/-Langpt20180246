@@ -35,23 +35,21 @@ const Realquize = () => {
       return newStatus;
     });
 
-    // 모든 페이지에서 선택이 완료되었고, 마지막 페이지에서 선택이 완료된 경우 resultpage로 이동
-    const allPagesSelected = answerStatus.every((status) => status !== null);
-    if (currentPage === totalPages && allPagesSelected) {
+    // 다음 페이지로 이동 (마지막 페이지가 아닐 때)
+    if (currentPage < totalPages) {
       setTimeout(() => {
-        navigate('/resultpage');
+        setCurrentPage((prevPage) => prevPage + 1);
       }, 1000);
-    } else {
-      // 다음 페이지로 이동 (마지막 페이지가 아닐 때)
-      if (currentPage < totalPages) {
-        setTimeout(() => {
-          setCurrentPage((prevPage) => prevPage + 1);
-        }, 1000);
-      }
     }
   };
 
+  // 완료 버튼 클릭 핸들러
+  const handleCompleteClick = () => {
+    navigate('/resultpage');
+  };
+
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+  const allPagesSelected = answerStatus.every((status) => status !== null); // 모든 페이지가 선택되었는지 확인
 
   return (
     <div className="big_box">
@@ -82,6 +80,15 @@ const Realquize = () => {
         >
           <div className="fale_word_rq">创造</div>
         </button>
+
+        
+        
+          {/* 완료 버튼 (모든 페이지에서 선택이 완료되었을 때 마지막 페이지에서만 표시) */}
+          
+
+          
+         
+        
       </div>
 
       {/* 페이지네이션 박스 */}
@@ -114,6 +121,15 @@ const Realquize = () => {
       <div className="next_box_rq">
         <p>{`${totalPages} 페이지 중 ${currentPage} 페이지`}</p>
       </div>
+      {currentPage === totalPages && allPagesSelected && (
+            <button className="complete_button_box_rq" onClick={handleCompleteClick}>
+              <div className='complete_button_content_rq'>결과 보기
+              </div>
+
+            </button>
+            
+          )}
+
     </div>
   );
 };

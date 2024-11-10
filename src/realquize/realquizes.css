@@ -64,6 +64,7 @@
     margin-left: 20px; /* 왼쪽에 20px의 여백을 추가 */
     top: calc(200px + 20px + 32px + 20px + 92px - 50px); /* 위로 적절히 조정 */
     padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+    cursor: pointer;
 }
 
 .true_word_rq{
@@ -91,6 +92,7 @@
     margin-right: 30px; /* 왼쪽에 20px의 여백을 추가 */
     top: calc(200px + 20px + 32px + 20px + 92px - 50px); /* 위로 적절히 조정 */
     padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+    cursor: pointer;
   }
   .fale_word_rq{
     position: absolute; /* 부모 박스를 기준으로 절대 위치 */
@@ -112,19 +114,7 @@
     color: #fff;
     border-color: #1E88E5;
   }
-  .complete_button_rq{
-    position: absolute; /* 부모 박스를 기준으로 절대 위치 */
-    top: 50%; /* 세로 중앙 정렬 */
-    left: 100%; /* 가로 중앙 정렬 */
-    transform: translate(-50%, -50%); /* 정확히 중앙에 위치하도록 조정 */
-    width: 10%; /* 부모 박스의 너비에 맞추기 */
-    height: 40%; /* 부모 박스의 높이에 맞추기 */
-    background: #ffffff; /* 배경을 흰색으로 설정 */
-    color: white; /* 글자 색을 흰색으로 설정 */
-    font-size: 35px; /* 글자 크기 크게 설정 */
-    text-align: center; /* 글자 가운데 정렬 */
-    line-height: 180px; 
-  }
+ 
   .chat_ractangle_mainChat.sidebar-open_rq {
     width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
     margin-left: 250px;
@@ -246,5 +236,20 @@
   .next_box_rq button:disabled {
     background-color: #d1d1d1;
     cursor: not-allowed;
+  }
+  .complete_button_box_rq{
+    cursor: pointer;
+    left: 70%;
+    top: 80%; /* 세로 */
+    width: 80px; /* 너비를 30%로 설정 */
+    height: 40px; /* 높이를 120%로 설정 */
+    background-color: #367cff;
+    position: absolute;
+    border-radius: 8px; /* 모서리 둥글게 */
+  }
+  .complete_button_content_rq{
+    color: white;
+    font-size: 15px; /* 글자 크기 크게 설정 */
+    text-align: center; /* 글자 가운데 정렬 */
   }
  

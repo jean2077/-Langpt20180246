@@ -10,6 +10,7 @@ import Quize from './Quize/quize';
 import Realquize from'./realquize/realquizes';
 import ResultPage from './resultPage/resultpage';
 import Stats from './Stats/stats';
+import Management from './management/management';
 
 
 // app.js는 라우터 기능을 하고 있으므로 절대 변경금지
@@ -28,6 +29,7 @@ function App() {
           <Route path="/realquizes" element={<Realquize />} /> 
           <Route path="/resultpage" element={<ResultPage />} /> 
           <Route path="/stats" element={<Stats />} /> 
+          <Route path="/management" element={<Management />} /> 
 
         </Routes>
       </div>

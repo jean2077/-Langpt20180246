@@ -199,6 +199,23 @@
   flex-shrink: 0;
   min-width: 80px; /* 버튼 최소 너비 설정 */
 }
+.go-to-realquizes-button_box_qz{
+  background: linear-gradient(135deg, #367cff, #0056b3);
+  text-align: center;
+  position: absolute;  /* 절대 위치로 설정 */
+  left: 50%;  /* 가운데 정렬 */
+  top: calc(250px + 20px + 32px + 20px); /* more_than_qz 아래에 32px 글자 크기와 20px 여백 추가 */
+  transform: translateX(-50%);  /* 가로 방향 가운데 정렬 */
+  width: 300px;  /* 너비 설정 */
+  height: 40px;  /* 높이 설정 */
+  border-radius: 20px;
+  cursor: pointer;
+}
+.go-to-realquizes-button_content_qz{
+  color: white; /* 텍스트 색을 흰색으로 설정 */
+  font-size: 50x; /* 글자 크기 설정 */
+  font-weight: 400; /* 글자 두께 설정 */
+}
 
 
 
