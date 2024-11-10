@@ -5,16 +5,16 @@ function MainPage() {
   return (
     <div className="MainPage">
       
-      <div className="hello">안녕하세요! hello! 你好！</div>
-      <div className="ballon_left">안녕하세요! 혜성학생, 오늘은 우리 把자문에 대해 배워볼까요?</div>
-      <div className="polygon"></div>
-      <div className="rectangle"></div>
-      <div className="ballon_right">선생님 안녕하세요!</div>
-      <div className="chat_ractangle"></div>
-      <div className="long_rectangle"></div>
+      <div class="hello">안녕하세요! hello! 你好！</div>
+      <div class="ballon_left">안녕하세요! 혜성학생, 오늘은 우리 把자문에 대해 배워볼까요?</div>
+      <div class="polygon"></div>
+      <div class="rectangle"></div>
+      <div class="ballon_right">선생님 안녕하세요!</div>
+      <div class="chat_ractangle"></div>
+      <div class="long_rectangle"></div>
 
-      <a href="./login" className="long_rectangle">
-    <div className="long_in_rectangle">여기를 눌러 무료로 이용해보세요.</div>
+      <a href="/login" class="long_rectangle">
+    <div class="long_in_rectangle">여기를 눌러 무료로 이용해보세요.</div>
 </a>
     </div>
   );

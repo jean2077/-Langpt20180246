@@ -41,7 +41,7 @@ function FirstNewLogin() {
         장난끼많은 귀여운 판다 "푸바오"
       </div>
 
-      <a href="./main_chat_page" className="start">이제 즐거운 언어학습을 시작해볼까요?</a>
+      <a href="#start-learning" className="start">이제 즐거운 언어학습을 시작해볼까요?</a>
     </div>
 
 
