@@ -23,7 +23,7 @@ function MainChatPage() {
         setUserInput("");
 
         setTimeout(() => {
-            setMessages(prevMessages => [...prevMessages, { sender: 'bot', text: "안녕하세요 혜성학생 아직 데이터베이스가 구현되지 않은 상태입니다 구현후 다시 시도해주세요" }]);
+            setMessages(prevMessages => [...prevMessages, { sender: 'bot', text: "안녕하세요 혜성학생! 오늘은 이합동사에 대해 배워볼까요?" }]);
         }, 1000);
     };
 

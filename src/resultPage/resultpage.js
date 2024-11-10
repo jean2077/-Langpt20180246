@@ -33,8 +33,8 @@ function ResultPage() {
             <div className="user_name_rp">안녕하세요! DB님</div>
             <div className="result_box_rp">
                 <div className="result_cgl_coment_rp">축하합니다</div>
-                <div className="result_correct_rp">DB개 맞추셨습니다</div>
-                <div className="more_than_rp">더 공부해라</div>
+                <div className="result_correct_rp">3개 맞추셨습니다</div>
+                <div className="more_than_rp">좋아요! 조금만 더 열심해 해보아요!</div>
 
                 {/* 돌아가기 버튼 클릭 시 Quize 페이지로 이동 */}
                 <div className="return_quize_rp" onClick={handleReturnToQuize}>

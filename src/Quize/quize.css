@@ -50,6 +50,7 @@
   left: 50%;  /* 가운데 정렬 */
   top: calc(200px + 20px);  /* middle_box_qz 아래에 20px 여백 추가 */
   transform: translateX(-50%);  /* 가로 방향 가운데 정렬 */
+  white-space: nowrap; /* 텍스트 줄바꿈을 방지 */
 }
 
 .quote_qz {
@@ -86,7 +87,7 @@
 }
 .main_quize_box_content_today_word_qz{
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   text-align: center;
   position: relative;
@@ -113,7 +114,7 @@
 }
 .today_word_chian_qz {
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   text-align: center;
   position: relative;
@@ -128,6 +129,7 @@
   right: 0; /* 왼쪽 정렬 */
   top: calc(200px + 20px + 32px + 20px + 92px + 20px); /* quote_qz 아래에 배치 */
   padding: 20px; /* 추가적인 여백을 주고 싶다면 설정 */
+  cursor: pointer;
 }
 .how_study_box_content_qz{
   color: white;
