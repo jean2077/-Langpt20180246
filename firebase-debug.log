@@ -1,0 +1,240 @@
+[debug] [2024-11-10T11:51:57.225Z] ----------------------------------------------------------------------
+[debug] [2024-11-10T11:51:57.226Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-11-10T11:51:57.227Z] CLI Version:   13.24.2
+[debug] [2024-11-10T11:51:57.227Z] Platform:      win32
+[debug] [2024-11-10T11:51:57.227Z] Node Version:  v18.20.4
+[debug] [2024-11-10T11:51:57.227Z] Time:          Sun Nov 10 2024 20:51:57 GMT+0900 (대한민국 표준시)
+[debug] [2024-11-10T11:51:57.228Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-10T11:51:57.303Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-10T11:51:57.303Z] > authorizing via signed-in user (jeajun9568@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-11-10T11:51:57.310Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2024-11-10T11:51:57.311Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-10T11:51:57.315Z] [hub] writing locator at C:\Users\jeaju\AppData\Local\Temp\hub-langpt3.json
+[debug] [2024-11-10T11:51:57.330Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-10T11:51:57.330Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-10T11:51:57.330Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-10T11:51:57.330Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-10T11:51:57.333Z] defaultcredentials: writing to file C:\Users\jeaju\AppData\Roaming\firebase\jeajun9568_gmail_com_application_default_credentials.json
+[debug] [2024-11-10T11:51:57.334Z] Setting GAC to C:\Users\jeaju\AppData\Roaming\firebase\jeajun9568_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\jeaju\\AppData\\Roaming\\firebase\\jeajun9568_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-10T11:51:57.335Z] Checked if tokens are valid: true, expires at: 1731241268962
+[debug] [2024-11-10T11:51:57.335Z] Checked if tokens are valid: true, expires at: 1731241268962
+[debug] [2024-11-10T11:51:57.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/langpt3/adminSdkConfig [none]
+[debug] [2024-11-10T11:51:57.725Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/langpt3/adminSdkConfig 200
+[debug] [2024-11-10T11:51:57.725Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/langpt3/adminSdkConfig {"projectId":"langpt3","databaseURL":"https://langpt3-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"langpt3.firebasestorage.app"}
+[debug] [2024-11-10T11:51:57.745Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-10T11:51:57.745Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-10T11:51:57.746Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\jeaju\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\jeaju\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-10T11:51:57.848Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2024-11-10T11:51:57.848Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "C:\Project\gptlanguage\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Project\\gptlanguage\\functions\" for Cloud Functions..."}}
+[debug] [2024-11-10T11:51:57.970Z] Validating nodejs source
+[debug] [2024-11-10T11:51:58.591Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-10T11:51:58.591Z] Building nodejs source
+[debug] [2024-11-10T11:51:58.591Z] Failed to find version of module node: reached end of search path C:\Project\gptlanguage\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-11-10T11:51:58.594Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-10T11:51:58.597Z] Found firebase-functions binary at 'C:\Project\gptlanguage\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8181
+
+[debug] [2024-11-10T11:51:58.988Z] Got response from /__/functions.yaml {"endpoints":{"callGptApi":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"callGptApi"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: callGptApi. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: callGptApi."}}
+[info] +  functions[us-central1-callGptApi]: http function initialized (http://127.0.0.1:5001/langpt3/us-central1/callGptApi). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/langpt3/us-central1/callGptApi)."}}
+[debug] [2024-11-10T11:51:59.020Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED ::1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-11-10T11:52:43.080Z] [work-queue] {"queuedWork":["/langpt3/us-central1/callGptApi-2024-11-10T11:52:43.080Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-11-10T11:52:43.080Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/langpt3/us-central1/callGptApi-2024-11-10T11:52:43.080Z"],"workRunningCount":1}
+[debug] [2024-11-10T11:52:43.081Z] Accepted request POST /langpt3/us-central1/callGptApi --> us-central1-callGptApi
+[debug] [2024-11-10T11:52:43.082Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-11-10T11:52:43.083Z] [functions] Got req.url=/langpt3/us-central1/callGptApi, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/langpt3/us-central1/callGptApi, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-11-10T11:52:43.091Z] [worker-pool] addWorker(us-central1-callGptApi) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-callGptApi)"}}
+[debug] [2024-11-10T11:52:43.091Z] [worker-pool] Adding worker with key us-central1-callGptApi, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-callGptApi, total=1"}}
+[debug] [2024-11-10T11:52:44.089Z] [runtime-status] [5648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.090Z] [runtime-status] [5648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.091Z] [runtime-status] [5648] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-11-10T11:52:44.091Z] [runtime-status] [5648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.293Z] [runtime-status] [5648] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-11-10T11:52:44.293Z] [runtime-status] [5648] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.1.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2024-11-10T11:52:44.293Z] [runtime-status] [5648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.296Z] [runtime-status] [5648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.298Z] [runtime-status] [5648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-11-10T11:52:44.298Z] [runtime-status] [5648] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Project\\gptlanguage\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Project\\\\gptlanguage\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-11-10T11:52:44.331Z] [runtime-status] [5648] initializeApp(DEFAULT) {"storageBucket":"langpt3.firebasestorage.app","databaseURL":"https://langpt3-default-rtdb.asia-southeast1.firebasedatabase.app","projectId":"langpt3"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] initializeApp(DEFAULT) {\"storageBucket\":\"langpt3.firebasestorage.app\",\"databaseURL\":\"https://langpt3-default-rtdb.asia-southeast1.firebasedatabase.app\",\"projectId\":\"langpt3\"}"}}
+[debug] [2024-11-10T11:52:44.336Z] [runtime-status] [5648] Functions runtime initialized. {"cwd":"C:\\Project\\gptlanguage\\functions","node_version":"18.20.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Functions runtime initialized. {\"cwd\":\"C:\\\\Project\\\\gptlanguage\\\\functions\",\"node_version\":\"18.20.4\"}"}}
+[debug] [2024-11-10T11:52:44.336Z] [runtime-status] [5648] Listening to port: \\?\pipe\fire_emu_7313271de3599f0b {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[runtime-status] [5648] Listening to port: \\\\?\\pipe\\fire_emu_7313271de3599f0b"}}
+[debug] [2024-11-10T11:52:44.400Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: IDLE"}}
+[debug] [2024-11-10T11:52:44.400Z] [worker-pool] submitRequest(triggerId=us-central1-callGptApi) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-callGptApi)"}}
+[info] i  functions: Beginning execution of "us-central1-callGptApi" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"Beginning execution of \"us-central1-callGptApi\""}}
+[debug] [2024-11-10T11:52:44.401Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: BUSY"}}
+[debug] [2024-11-10T11:52:47.403Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-callGptApi" in 3001.9812ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"Finished \"us-central1-callGptApi\" in 3001.9812ms"}}
+[debug] [2024-11-10T11:52:47.404Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: IDLE"}}
+[debug] [2024-11-10T11:52:47.404Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-11-10T11:52:47.404Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-11-10T11:52:47.404Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-11-10T11:53:16.960Z] File C:\Project\gptlanguage\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Project\\gptlanguage\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-10T11:53:17.967Z] Validating nodejs source
+[debug] [2024-11-10T11:53:18.627Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-10T11:53:18.627Z] Building nodejs source
+[debug] [2024-11-10T11:53:18.627Z] Failed to find version of module node: reached end of search path C:\Project\gptlanguage\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-11-10T11:53:18.629Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-10T11:53:18.633Z] Found firebase-functions binary at 'C:\Project\gptlanguage\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8169
+
+[debug] [2024-11-10T11:53:19.028Z] Got response from /__/functions.yaml {"endpoints":{"callGptApi":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"callGptApi"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: callGptApi. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: callGptApi."}}
+[debug] [2024-11-10T11:53:19.045Z] [worker-pool] Shutting down IDLE worker (us-central1-callGptApi) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-callGptApi)"}}
+[debug] [2024-11-10T11:53:19.045Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: FINISHING"}}
+[debug] [2024-11-10T11:53:19.052Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: exited"}}
+[debug] [2024-11-10T11:53:19.052Z] [worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-callGptApi"},"extension":{},"message":"[worker-us-central1-callGptApi-880fcda6-8dd3-447f-b3ed-554a6fad8867]: FINISHED"}}
+[debug] [2024-11-10T11:53:20.041Z] File C:\Project\gptlanguage\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Project\\gptlanguage\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-11-10T11:53:21.056Z] Validating nodejs source
+[debug] [2024-11-10T11:53:21.709Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-10T11:53:21.709Z] Building nodejs source
+[debug] [2024-11-10T11:53:21.709Z] Failed to find version of module node: reached end of search path C:\Project\gptlanguage\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-11-10T11:53:21.711Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-10T11:53:21.714Z] Found firebase-functions binary at 'C:\Project\gptlanguage\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-11-10T11:53:21.718Z] File C:\Project\gptlanguage\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Project\\gptlanguage\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8975
+
+[debug] [2024-11-10T11:53:22.140Z] Got response from /__/functions.yaml {"endpoints":{"callGptApi":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"callGptApi"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: callGptApi. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: callGptApi."}}
+[debug] [2024-11-10T11:53:22.720Z] Validating nodejs source
+[debug] [2024-11-10T11:53:23.366Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-10T11:53:23.366Z] Building nodejs source
+[debug] [2024-11-10T11:53:23.366Z] Failed to find version of module node: reached end of search path C:\Project\gptlanguage\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-11-10T11:53:23.367Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-10T11:53:23.371Z] Found firebase-functions binary at 'C:\Project\gptlanguage\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8572
+
+[debug] [2024-11-10T11:53:23.775Z] Got response from /__/functions.yaml {"endpoints":{"callGptApi":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"callGptApi"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: callGptApi. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: callGptApi."}}
