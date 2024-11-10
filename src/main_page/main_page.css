@@ -8,7 +8,7 @@ body, html {
   background-color: #ffffff;
 }
 
-.MainPage {
+.MainPage_mp {
   position: relative;
   padding: 20px;
 }
@@ -31,7 +31,7 @@ body, html {
 }
 
 /* hello */
-.hello {
+.hello_mp {
   position: fixed;
   text-align: center;
   left: calc(50% + 10px); /* X축으로 오른쪽으로 20px 이동 */
@@ -48,7 +48,7 @@ body, html {
 }
 
 /* 채팅박스 */
-.chat_ractangle {
+.chat_ractangle_mp {
   position: relative;
   width: 950px;
   height: 480px;
@@ -63,12 +63,12 @@ body, html {
 }
 
 /* 왼쪽 말풍선 */
-.ballon_left {
+.ballon_left_mp {
   position: absolute;
   width: 318px;
   height: 208px;
   left: calc(50% - 450px);
-  top: calc(50% - 50px);
+  top: calc(30% - 50px);
   background: #367cff;
   color: #ffffff;
   border-radius: 20px;
@@ -79,10 +79,11 @@ body, html {
   opacity: 0; /* 처음에는 보이지 않도록 설정 */
   transform: translateY(20px); /* 아래에서 올라오는 효과 */
   transition: opacity 1s ease, transform 1s ease; /* 애니메이션 추가 */
+  text-align: left;
 }
 
 /* 왼쪽 말풍선 꼬리 */
-.ballon_left:after {
+.ballon_left_mp:after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -96,12 +97,12 @@ body, html {
 }
 
 /* 오른쪽 말풍선 */
-.ballon_right {
+.ballon_right_mp {
   position: absolute;
   width: 202px;
   height: 85px;
   left: calc(50% + 200px);
-  top: calc(50% - 160px);
+  top: calc(30% - 160px);
   background: #367cff;
   color: #ffffff;
   border-radius: 20px;
@@ -115,7 +116,7 @@ body, html {
 }
 
 /* 오른쪽 말풍선 꼬리 */
-.ballon_right:after {
+.ballon_right_mp:after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -129,9 +130,9 @@ body, html {
   
 }
 
-.long_rectangle {
+.long_rectangle_mp {
   position: absolute;
-  left: 17%; /* X축 중앙 정렬 */
+  left: 18%; /* X축 중앙 정렬 */
   top: calc(50% + 230px); /* Y축으로 중앙에서 아래쪽으로 230px 이동 */
   width: 700px;
   height: 80px;
@@ -152,7 +153,7 @@ body, html {
 }
 
 /* 긴 박스 내부 */
-.long_in_rectangle {
+.long_in_rectangle_mp {
   width: 680px;
   height: 70px;
   background: linear-gradient(135deg, #367cff, #0056b3);

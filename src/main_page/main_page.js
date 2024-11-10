@@ -22,14 +22,14 @@ function MainPage() {
   }, []);
 
   return (
-    <div className="MainPage">
-      <div className="hello">안녕하세요! hello! 你好！</div>
+    <div className="MainPage_mp">
+      <div className="hello_mp">안녕하세요! hello! 你好！</div>
 
-      <div className={`ballon_right ${isVisible.ballonRight ? 'fade-in' : ''}`}>
+      <div className={`ballon_right_mp ${isVisible.ballonRight ? 'fade-in' : ''}`}>
         선생님 안녕하세요!
       </div>
 
-      <div className={`ballon_left ${isVisible.ballonLeft ? 'fade-in' : ''}`}>
+      <div className={`ballon_left_mp ${isVisible.ballonLeft ? 'fade-in' : ''}`}>
         안녕하세요! 혜성학생, 오늘은 우리 把자문에 대해 배워볼까요?
       </div>
 
@@ -37,8 +37,8 @@ function MainPage() {
 
      
       </div>
-      <a href="./login" className={`long_rectangle ${isVisible.longRectangle ? 'fade-in' : ''}`}>
-        <div className="long_in_rectangle">여기를 눌러 무료로 이용해보세요.</div>
+      <a href="./login" className={`long_rectangle_mp ${isVisible.longRectangle ? 'fade-in' : ''}`}>
+        <div className="long_in_rectangle_mp">여기를 눌러 무료로 이용해보세요.</div>
         
       </a>
     </div>
