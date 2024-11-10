@@ -33,10 +33,13 @@ function MainPage() {
         안녕하세요! 혜성학생, 오늘은 우리 把자문에 대해 배워볼까요?
       </div>
 
-      <div className="chat_ractangle"></div>
+      <div className="chat_ractangle">
 
+     
+      </div>
       <a href="./login" className={`long_rectangle ${isVisible.longRectangle ? 'fade-in' : ''}`}>
         <div className="long_in_rectangle">여기를 눌러 무료로 이용해보세요.</div>
+        
       </a>
     </div>
   );
