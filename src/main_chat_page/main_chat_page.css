@@ -115,3 +115,10 @@
   flex-shrink: 0;
   min-width: 80px; /* 버튼 최소 너비 설정 */
 }
+
+.message-meta {
+  font-size: 0.75rem; /* 작은 폰트 크기 */
+  color: #555; /* 회색 폰트 색상 */
+  margin-bottom: 5px; /* 메시지와의 간격 */
+  text-align: center; /* 왼쪽 정렬 */
+}

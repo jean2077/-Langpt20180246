@@ -6,8 +6,9 @@ import './sidebar.css';
 const Sidebar = ({ setIsSidebarOpen }) => {
     const navigate = useNavigate();
 
+    // 마이페이지로 이동하는 함수 수정
     const handleHomeClick = () => {
-        console.log("홈 버튼 클릭됨!");
+        navigate('/stats');  // /stats 페이지로 리다이렉트
     };
 
     const handleNewChatClick = () => {
@@ -22,7 +23,8 @@ const Sidebar = ({ setIsSidebarOpen }) => {
                 <button className="close-button" onClick={() => setIsSidebarOpen(false)}>닫기</button>
             </div>
             <ChatLog />
-            <button className="home-button" onClick={handleHomeClick}>홈</button>
+            {/* 마이페이지 버튼 클릭 시 /stats로 리다이렉트 */}
+            <button className="home-button" onClick={handleHomeClick}>마이 페이지</button>
         </div>
     );
 };

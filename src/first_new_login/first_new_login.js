@@ -17,21 +17,21 @@ function FirstNewLogin() {
 
       {/* 선생님 선택 영역 */}
       <div className="teacher-selection">
-      <div className="title">언어를 가르쳐 줄 선생님을 선택해보세요</div>
+    
 
       {/* 각각의 선생님을 클릭 시 선택 상태에 따라 스타일 변경 */}
       <div
         className={`teacher ${selectedTeacher === "이혜성" ? "selected" : ""}`}
         onClick={() => handleTeacherClick("이혜성")}
       >
-        엄격하지만 다정한 선생님 "이혜성"
+        엄격하지만 다정한 선생님 "메이린"
       </div>
 
       <div
         className={`teacher ${selectedTeacher === "야스오" ? "selected" : ""}`}
         onClick={() => handleTeacherClick("야스오")}
       >
-        작년에 해외에서 친해진 펜팔친구 "야스오"
+        해외에서 오래 살다온 "제이크"
       </div>
 
       <div
@@ -41,7 +41,7 @@ function FirstNewLogin() {
         장난끼많은 귀여운 판다 "푸바오"
       </div>
 
-      <a href="#start-learning" className="start">이제 즐거운 언어학습을 시작해볼까요?</a>
+      <a href="./chat" className="start">이제 즐거운 언어학습을 시작해볼까요?</a>
     </div>
 
 

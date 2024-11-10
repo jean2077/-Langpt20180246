@@ -6,6 +6,10 @@ import MainPage from "./main_page/main_page"; // MainPage 컴포넌트 임포트
 import ChoiceMemType from './choice_mem_type/choice_mem_type';
 import FirstNewLogin from './first_new_login/first_new_login';
 import MainChatPage from './main_chat_page/main_chat_page';
+import Management from './management/management';
+import Stats from './stats/stats';
+import FindIdAndPassword from './find_password_id/find_password_id';
+import QuizPage from './quizzPage/quizzPage';
 
 
 // app.js는 라우터 기능을 하고 있으므로 절대 변경금지
@@ -20,6 +24,10 @@ function App() {
           <Route path="/choice_mem_type" element={<ChoiceMemType />} /> {/* 새로운 회원가입 타입 선택 페이지 경로 */}
           <Route path="/first_new_login" element={<FirstNewLogin />} /> {/* 처음 서비스 시작 페이지 */}
           <Route path="/chat" element={<MainChatPage />} /> {/* 채팅 페이지 경로 */}
+          <Route path="/management" element={<Management />} /> {/* 회원가입 */}
+          <Route path="/stats" element={<Stats />} /> {/* 통계 */}
+          <Route path="/findId" element={<FindIdAndPassword />} /> {/* 아이찾기 */}
+          <Route path="/quizz" element={<QuizPage />} /> {/* 퀴즈 */}
         </Routes>
       </div>
     </Router>

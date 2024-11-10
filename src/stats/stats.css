@@ -1,0 +1,445 @@
+.how_long_study_time_st{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute; /* 위치 설정 */
+  left: 50%; /* 화면 가운데 정렬 */
+  top: 52px;
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+  width: 1156px;
+  height: 217px;
+}
+.use_week_chat_box_st {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.249);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  left: 50%; /* 가로 방향 가운데 정렬 */
+  top: calc(25% - 30px); /* 박스를 더 위쪽으로 이동 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+}
+
+.use_week_chat_number_content_st {
+  font-size: 15px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 15%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+
+.use_week_chat_number_content_circle_grapgh_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 30%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_week_chat_number_content_gn_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 50%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_week_chat_number_content_5959_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 70%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+
+.use_days_chat_box_st{
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.249);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  left: 30%; /* 가로 방향 가운데 정렬 */
+  top: calc(25% - 30px); /* 박스를 더 위쪽으로 이동 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+}
+
+.use_days_chat_number_content_st{   /*일일평균사용시간*/
+  font-size: 15px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 15%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+
+.use_days_chat_number_content_bar_grapgh_st{   /*막대 그래프*/
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 40%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+
+.use_days_chat_number_content_number_st{ /*2h20m*/
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 70%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+
+.use_all_chat_box_st{
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.249);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  left: 70%; /* 가로 방향 가운데 정렬 */
+  top: calc(25% - 30px); /* 박스를 더 위쪽으로 이동 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+}
+
+.use_all_chat_number_content_time_st{
+  font-size: 15px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 10%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_all_chat_number_content_number_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 25%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_all_chat_number_content_gayG_grapgh_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 40%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_all_chat_number_content_5959_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 55%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.use_all_chat_number_content_5959_more_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 70%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.you_study_same_time_box_st{
+  box-sizing: border-box;
+  background-color: rgba(128, 128, 128, 0.5); /* 회색 계열로 변경 */
+  border-radius: 30px;
+  border-style: solid;
+  border-color: F6F1F1;
+  border-width: 1px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  margin: 0 auto;
+  left: 30%; /* 가로 방향 가운데 정렬 */
+  top: calc(60% + 100px); /* 박스를 더 위쪽으로 이동 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+  margin-bottom: 20px;
+}
+
+.you_study_same_time_coment_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 68%; /* 세로 방향 가운데 */
+  left: 30%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.you_study_same_time_img_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 20%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.you_study_same_do_it_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 60%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.you_study_same_do_ing_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 80%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.more_than_play_box_st
+{
+  box-sizing: border-box;
+  background-color: rgba(128, 128, 128, 0.5); /* 회색 계열로 변경 */
+  border-radius: 30px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  left: 70%; /* 가로 방향 가운데 정렬 */
+  top: calc(60% + 100px); /* 박스를 더 위쪽으로 이동 */
+  transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+}
+.more_than_play_img_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 25%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.more_than_play_content_st{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  /* 텍스트를 가운데 정렬 */
+  position: absolute;  /* 박스 내부에서 위치 조정 */
+  top: 75%; /* 세로 방향 가운데 */
+  left: 50%; /* 가로 방향 가운데 */
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  white-space: nowrap; /* 텍스트가 다음 줄로 넘어가지 않도록 설정 */
+}
+.chat_ractangle_mainChat.sidebar-open_st {
+  width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
+  margin-left: 250px;
+}
+
+.chat_ractangle_mainChat.sidebar-closed_st {
+  width: 100vw; /* 전체 화면 너비 */
+  margin-left: 0;
+}
+
+/* 사이드바 열기 버튼 */
+.open-sidebar-button_st {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #367cff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* 항상 최상단에 표시 */
+}
+
+/* 입력창 스타일 - 기본 */
+.chat-input-section_st {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  left: 35%;
+  border-top: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 60%;
+  z-index: 9;
+  transition: margin-left 0.3s ease;
+}
+
+.chat-input_st {
+  width: 50%; /* 필요시 입력창의 가로 길이 조정 */
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.send-button_st {
+  padding: 10px 20px;
+  background-color: #367cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  min-width: 80px; /* 버튼 최소 너비 설정 */
+}
+/* 페이지네이션 박스 */
+.page_box_st {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+/* 페이지네이션 버튼들 */
+.page_box_st button {
+  background-color: #4157c6; /* 버튼 배경색 */
+  color: white; /* 글자 색 */
+  border: none; /* 기본 테두리 제거 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 8px 15px; /* 버튼 내부 여백 */
+  cursor: pointer; /* 마우스 커서 */
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 페이지네이션 버튼 hover 시 스타일 */
+.page_box_rq button:hover {
+  background-color: #354a94; /* hover 시 배경색 변경 */
+  transform: scale(1.05); /* hover 시 버튼 크기 약간 확대 */
+}
+
+/* 비활성화된 페이지네이션 버튼 (disabled) */
+.page_box_rq button:disabled {
+  background-color: #d1d1d1; /* 비활성화된 버튼 배경색 */
+  cursor: not-allowed; /* 비활성화 시 커서 변경 */
+}
+
+/* '다음' 버튼 */
+.next_box_rq {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next_box_rq button {
+  background-color: #4157c6; /* '다음' 버튼 배경색 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* '다음' 버튼 hover 시 스타일 */
+.next_box_rq button:hover {
+  background-color: #354a94;
+  transform: scale(1.05);
+}
+
+/* 비활성화된 '다음' 버튼 */
+.next_box_rq button:disabled {
+  background-color: #d1d1d1;
+  cursor: not-allowed;
+}
+
+.quiz-link-container {
+  text-align: center;
+  margin-top: 300px;  /* 위쪽 여백을 더 늘려서 아래로 이동 */
+}
+
+.quiz-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #367cff;  /* 파란색 배경 */
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;  /* 기본 링크 스타일 제거 */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-link:hover {
+  background-color: #2857b2;  /* 버튼 hover 시 색상 변경 */
+  transform: scale(1.05);  /* hover 시 버튼 크기 확대 */
+}
