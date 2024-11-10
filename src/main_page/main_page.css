@@ -132,7 +132,7 @@ body, html {
 
 .long_rectangle_mp {
   position: absolute;
-  left: 18%; /* X축 중앙 정렬 */
+  left: 16%; /* X축 중앙 정렬 */
   top: calc(50% + 230px); /* Y축으로 중앙에서 아래쪽으로 230px 이동 */
   width: 700px;
   height: 80px;

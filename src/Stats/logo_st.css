@@ -1,0 +1,26 @@
+.logo_image_st {
+    cursor: pointer;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    position: absolute; /* 위치 설정 */
+    left: 20%; /* 화면 가운데 정렬 */
+    top: 52px;
+    transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+    width: 100px;
+    height: 100px;
+    display: block;  
+}
+
+.logo_placeholder_st{
+    cursor: pointer;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    position: absolute; /* 위치 설정 */
+    left: 20%; /* 화면 가운데 정렬 */
+    top: 52px;
+    transform: translateX(-50%); /* 가로 방향 가운데 정렬 */
+    width: 100px;
+    height: 100px;
+    display: block;  
+
+}

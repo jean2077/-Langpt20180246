@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // 페이지 이동을 위한 useNavigate import
 import './resultpage.css';
 import Sidebar_rp from './sidebar_rp';
+import Logo_rp from './logo_rp'
 
 function ResultPage() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -19,7 +20,7 @@ function ResultPage() {
     const handleReturnToQuize = () => {
         navigate('/quize'); // Quize 페이지의 경로로 이동
     };
-
+           
     return (
         <div>
             {isSidebarOpen ? (
@@ -29,7 +30,7 @@ function ResultPage() {
                     사이드바 열기
                 </button>
             )}
-            
+            <Logo_rp />
             <div className="user_name_rp">안녕하세요! DB님</div>
             <div className="result_box_rp">
                 <div className="result_cgl_coment_rp">축하합니다</div>

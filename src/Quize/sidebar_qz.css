@@ -71,3 +71,64 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/* 채팅 박스 - 사이드바 상태에 따라 너비 조정 */
+.chat_ractangle_mainChat.sidebar-open_qz {
+    width: calc(100% - 250px); /* 사이드바 공간을 제외한 너비 */
+    margin-left: 250px;
+  }
+  
+  .chat_ractangle_mainChat.sidebar-closed_qz {
+    width: 100vw; /* 전체 화면 너비 */
+    margin-left: 0;
+  }
+  
+  /* 사이드바 열기 버튼 */
+  .open-sidebar-button_qz {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #367cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* 항상 최상단에 표시 */
+  }
+  
+  /* 입력창 스타일 - 기본 */
+  .chat-input-section_qz {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    left: 35%;
+    border-top: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    z-index: 9;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .chat-input_qz {
+    width: 50%; /* 필요시 입력창의 가로 길이 조정 */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .send-button_qz {
+    padding: 10px 20px;
+    background-color: #367cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    min-width: 80px; /* 버튼 최소 너비 설정 */
+  }
+  

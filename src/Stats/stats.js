@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './stats.css'; // CSS 파일 경로
 import Sidebar_st from './sidebar_st'; 
-
+import Logo_st from './logo_st'
 function Stats() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
@@ -22,7 +22,7 @@ function Stats() {
             사이드바 열기
         </button>
       )}
-
+          <Logo_st />
       <div className="how_long_study_time_st">얼마나 공부했을까요?</div>
       <div className="use_week_chat_box_st">
         <div className="use_week_chat_number_content_st">일주일동안 사용한 채팅 수</div>

@@ -4,6 +4,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import './realquizes.css';
 import Sidebar_rq from './sidebar_rq';
+import Logo_rp from '../resultPage/logo_rp';
 
 const Realquize = () => {
   const totalPages = 5;
@@ -60,7 +61,7 @@ const Realquize = () => {
           사이드바 열기
         </button>
       )}
-
+        <Logo_rp/>
       <div className="big_box_rtg">
         <div className="real_quize_box_rq">
           <div className="real_quize_china_rq">창조하다는 중국어로?</div>

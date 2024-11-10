@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './sidebar_st.css';
 import ChatLog_st from './chatLog_st'; // 올바른 이름으로 import
+import Logo_st from './logo_st'
 
 const Sidebar_st = ({ setIsSidebarOpen }) => {
     const navigate = useNavigate();
