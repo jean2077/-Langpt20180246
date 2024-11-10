@@ -30,6 +30,7 @@
     overflow: visible; /* 내부 요소가 잘리지 않도록 설정 */
     z-index: 1; /* 채팅박스를 아래에 위치하게 설정 */
     top: -80px;
+    z-index: 9; /* 10이므로 .background보다 위로 올림 */
   }
   
   /* 왼쪽 말풍선 */
@@ -44,7 +45,21 @@
     color: #ffffff; /* 텍스트 색상 */
     border-radius: 20px;
     padding: 12px 12.8px;
+    z-index: 10; /* 10이므로 .background보다 위로 올림 */
   }
+  .ballon_left:after 
+    {
+      content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 40px solid #367cff;
+    transform: rotate(45deg);
+    }
 
     /* 오른쪽 말풍선 */
     .ballon_right {
@@ -59,7 +74,7 @@
       padding: 12px 12.8px;
       text-align: center; 
       line-height: 20px;
-      z-index: 2; /* 말풍선이 위에 위치하도록 설정 */
+      z-index: 10; /* 10이므로 .background보다 위로 올림 */
     }
     
     .ballon_right:after 
@@ -74,6 +89,7 @@
       border-right: 10px solid transparent;
       border-top: 40px solid #367cff; /* 삼각형 높이를 늘림 */
       transform: rotate(300deg); /* 삼각형을 45도 회전 */
+      z-index: 10; /* 10이므로 .background보다 위로 올림 */
     }
     /* 선생님 선택 박스 */
 
@@ -96,7 +112,7 @@
 }
 
 /* 제목 스타일 */
-.teacher-selection .title {
+.teacher-selection.title  {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;

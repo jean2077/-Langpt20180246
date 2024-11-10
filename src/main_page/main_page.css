@@ -75,7 +75,7 @@ body, html {
   padding: 12px 12.8px;
   text-align: center;
   line-height: 20px;
-  z-index: 2;
+  z-index: 20;
   opacity: 0; /* 처음에는 보이지 않도록 설정 */
   transform: translateY(20px); /* 아래에서 올라오는 효과 */
   transition: opacity 1s ease, transform 1s ease; /* 애니메이션 추가 */
@@ -109,7 +109,7 @@ body, html {
   padding: 12px 12.8px;
   text-align: center;
   line-height: 20px;
-  z-index: 2;
+  z-index: 20;
   opacity: 0; /* 처음에는 보이지 않도록 설정 */
   transform: translateY(20px); /* 아래에서 올라오는 효과 */
   transition: opacity 1s ease, transform 1s ease; /* 애니메이션 추가 */
@@ -132,7 +132,7 @@ body, html {
 
 .long_rectangle_mp {
   position: absolute;
-  left: 16%; /* X축 중앙 정렬 */
+  left: 18%; /* X축 중앙 정렬 */
   top: calc(50% + 230px); /* Y축으로 중앙에서 아래쪽으로 230px 이동 */
   width: 700px;
   height: 80px;

@@ -34,12 +34,10 @@ function MainPage() {
       </div>
 
       <div className="chat_ractangle">
-
-     
       </div>
+      
       <a href="./login" className={`long_rectangle_mp ${isVisible.longRectangle ? 'fade-in' : ''}`}>
         <div className="long_in_rectangle_mp">여기를 눌러 무료로 이용해보세요.</div>
-        
       </a>
     </div>
   );
