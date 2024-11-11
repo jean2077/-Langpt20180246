@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Sw
 import './App.css';
 import Login from "./loginPage/login"; // Login 컴포넌트 임포트
 import MainPage from "./main_page/main_page"; // MainPage 컴포넌트 임포트
-import ChoiceMemType from './choice_mem_type/choice_mem_type';
 import FirstNewLogin from './first_new_login/first_new_login';
 import MainChatPage from './main_chat_page/main_chat_page';
 import Management from './management/management';
@@ -21,7 +20,6 @@ function App() {
         <Routes> {/* Switch를 Routes로 변경 */}
           <Route path="/" element={<MainPage />} /> {/* 메인 페이지 경로 */}
           <Route path="/login" element={<Login />} /> {/* 로그인 페이지 경로 */}
-          <Route path="/choice_mem_type" element={<ChoiceMemType />} /> {/* 새로운 회원가입 타입 선택 페이지 경로 */}
           <Route path="/first_new_login" element={<FirstNewLogin />} /> {/* 처음 서비스 시작 페이지 */}
           <Route path="/chat" element={<MainChatPage />} /> {/* 채팅 페이지 경로 */}
           <Route path="/management" element={<Management />} /> {/* 회원가입 */}

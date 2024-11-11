@@ -108,9 +108,9 @@ const Login = () => {
                 {errorMessage && <p className="error-message">{errorMessage}</p>}
 
                 {/* 기타 링크 */}
-                <div className="auth-container">
-                    <a href="findId" className="auth-link">아이디 찾기</a>
-                    <a href="/findId" className="auth-link">비밀번호 찾기</a>
+                <div className="auth-link-container">
+                    <a href="/findId" className="auth-link">아이디 찾기</a>
+                    <a href="/findPassword" className="auth-link">비밀번호 찾기</a>
                     <a href="/management" className="newmember-button">회원가입</a>
                 </div>
             </div>

@@ -71,7 +71,7 @@ function Stats() {
 
       {/* 퀴즈 페이지로 가는 앵커 링크 */}
       <div className="quiz-link-container">
-        <a href="http://localhost:3002/quizz" className="quiz-link">퀴즈 풀기</a>
+        <a href="/quizz" className="quiz-link">퀴즈 풀기</a>
       </div>
     </div>
   );
