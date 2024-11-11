@@ -104,32 +104,37 @@ const QuizPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [answerSelected, setAnswerSelected] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(null); // 선택한 답을 저장하는 상태
 
-  // useNavigate 훅을 사용하여 홈으로 돌아가는 함수
   const navigate = useNavigate();
 
   const handleAnswer = (selectedOption) => {
     if (answerSelected) return;
 
+    setSelectedAnswer(selectedOption);
     const correctAnswer = quizzes[currentIndex].result;
     if (selectedOption === correctAnswer) {
       setScore(score + 1);
     }
-    setAnswerSelected(true);
+    setAnswerSelected(true); // 답을 선택하면 답변 고정
   };
 
   const handleNext = () => {
     if (currentIndex < quizzes.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setAnswerSelected(false);
+      setSelectedAnswer(null); // 선택한 답 초기화
     } else {
       alert(`퀴즈 완료! 총 ${score}개의 문제를 맞혔습니다.`);
+      setCurrentIndex(0); // 초기화
+      setScore(0); // 점수 초기화
+      setAnswerSelected(false);
+      setSelectedAnswer(null);
     }
   };
 
-  // 홈으로 돌아가는 함수
   const handleGoHome = () => {
-    navigate('/');  // 홈 페이지로 이동
+    navigate('/');
   };
 
   const currentQuiz = quizzes[currentIndex];
@@ -140,10 +145,22 @@ const QuizPage = () => {
       <div className="question-container">
         <p>{currentQuiz.question}</p>
         <div className="options">
-          <button onClick={() => handleAnswer(currentQuiz.options.option1)}>
+          <button
+            onClick={() => handleAnswer(currentQuiz.options.option1)}
+            disabled={answerSelected}
+            style={{
+              backgroundColor: selectedAnswer === currentQuiz.options.option1 ? '#d3d3d3' : ''
+            }}
+          >
             {currentQuiz.options.option1}
           </button>
-          <button onClick={() => handleAnswer(currentQuiz.options.option2)}>
+          <button
+            onClick={() => handleAnswer(currentQuiz.options.option2)}
+            disabled={answerSelected}
+            style={{
+              backgroundColor: selectedAnswer === currentQuiz.options.option2 ? '#d3d3d3' : ''
+            }}
+          >
             {currentQuiz.options.option2}
           </button>
         </div>
@@ -154,8 +171,6 @@ const QuizPage = () => {
       <div className="score">
         <p>현재 점수: {score}</p>
       </div>
-
-      {/* 홈으로 돌아가기 버튼 추가 */}
       <button onClick={handleGoHome}>홈으로 돌아가기</button>
     </div>
   );
