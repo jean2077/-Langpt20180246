@@ -24,7 +24,7 @@ function App() {
           <Route path="/chat" element={<MainChatPage />} /> {/* 채팅 페이지 경로 */}
           <Route path="/management" element={<Management />} /> {/* 회원가입 */}
           <Route path="/stats" element={<Stats />} /> {/* 통계 */}
-          <Route path="/findId" element={<FindIdAndPassword />} /> {/* 아이찾기 */}
+          <Route path="/findpassword" element={<FindIdAndPassword />} /> {/* 아이찾기 */}
           <Route path="/quizz" element={<QuizPage />} /> {/* 퀴즈 */}
         </Routes>
       </div>

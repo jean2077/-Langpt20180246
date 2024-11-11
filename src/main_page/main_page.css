@@ -30,23 +30,46 @@ body, html {
   animation: fadeIn 1s ease-out forwards;
 }
 
-/* hello */
 .hello_mp {
-  position: fixed;
-  text-align: center;
-  left: calc(50% + 10px); /* X축으로 오른쪽으로 20px 이동 */
-  top: calc(50% - 450px); /* Y축으로 아래로 100px 이동 */
-  font-family: 'Inter'; /* 폰트 설정 */
-  font-style: normal;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
   font-weight: 400;
-  font-size: 80px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 5%; /* 더 위쪽으로 이동 */
+  left: 50%;
   transform: translateX(-50%);
-  width: 1500px; /* vw 대신 px 사용 */
-  height: 300px; /* vh 대신 px 사용 */
-  min-width: 300px; /* 최소 너비 설정 */
-  min-height: 200px; /* 최소 높이 설정 */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  z-index: 10; /* 다른 요소 위에 표시 */
+
+  /* 타이핑 애니메이션 적용 */
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
+
+/* 타이핑 애니메이션 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
 /* 채팅박스 */
 .chat_ractangle_mp {
   position: relative;

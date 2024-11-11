@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'; // useNavigate 임포트
 import { getFirestore, query, where, getDocs, collection, doc, setDoc, Timestamp } from 'firebase/firestore'; // Firestore에서 필요한 함수들 import
 import './management.css';
 
+
 function Management() {
   const navigate = useNavigate(); // useNavigate 훅 호출
   const [email, setEmail] = useState('');
@@ -148,7 +149,7 @@ function Management() {
   return (
     <div>
       {/* 인사말 텍스트 */}
-      <div className="greeting-text">
+      <div className="hello_mangement">
         <span>안녕하세요! 你好! Hello!</span>
       </div>
 
@@ -225,7 +226,11 @@ function Management() {
         <button className="confirm-button" onClick={handleConfirmClick}>
           확인
         </button>
+
+        
       </div>
+      <div class="background"></div>
+
     </div>
   );
 }

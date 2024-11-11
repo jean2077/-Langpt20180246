@@ -1,8 +1,8 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";  // Realtime Database 관련 함수
-import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword } from "firebase/auth";  // Authentication 관련 함수들 추가
-import { getFirestore, doc, setDoc } from "firebase/firestore";  // Firestore 관련 함수들 추가
+import { getDatabase } from "firebase/database";
+import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword } from "firebase/auth";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";  // Firebase Storage 관련 함수들 추가
 
 // Firebase 설정 (Firebase Console에서 확인 가능)
 const firebaseConfig = {
@@ -20,13 +20,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Realtime Database 초기화
-const database = getDatabase(app);  // Realtime Database 초기화
-
-// Firestore 초기화
+const database = getDatabase(app);
 const db = getFirestore(app);
-
-// Authentication 초기화
 const auth = getAuth(app);
+const storage = getStorage(app);  // Firebase Storage 초기화
 
 // Google 로그인을 위한 Provider 및 팝업 기능 추가
 const googleProvider = new GoogleAuthProvider();
@@ -51,22 +48,39 @@ const signInWithEmail = (auth, email, password) => {
 
 // Firestore에 새로운 사용자 정보 저장
 const saveUserData = async (user, nickname) => {
-  const userRef = doc(db, "users", user.uid); // Firestore의 users 컬렉션에 유저 ID로 문서 생성
+  const userRef = doc(db, "users", user.uid);
   await setDoc(userRef, {
     email: user.email,
     nickname: nickname,
-    name: "",  // 기본값은 빈 문자열
+    name: "",
     current_streak: 0,
     highest_streak: 0,
-    intelligence_disability: "이혜성",  // 기본값 설정
-    join_date: new Date().toISOString(),  // 가입 날짜는 현재 시간
-    last_active: new Date().toISOString(),  // 마지막 활동도 현재 시간
+    intelligence_disability: "이혜성",
+    join_date: new Date().toISOString(),
+    last_active: new Date().toISOString(),
     last_quiz_score: 0,
-    password: "",  // 비밀번호는 직접 Firestore에 저장하지 않습니다.
+    password: "",
     total_quiz_score: 0,
     total_study_time: 0,
-    user_id: user.uid,  // Firebase Authentication의 UID 사용
+    user_id: user.uid,
   });
 };
 
-export { database, db, auth, signInWithGooglePopup, createUserWithEmail, sendVerificationEmail, signInWithEmail, saveUserData };  // 함수들 export
+// Storage에서 파일 URL 가져오기
+const fetchFileURL = async (filePath) => {
+  const fileRef = ref(storage, filePath);  // Storage에서 파일 참조 생성
+  return await getDownloadURL(fileRef);  // 파일의 다운로드 URL을 가져오기
+};
+
+export { 
+  database, 
+  db, 
+  auth, 
+  signInWithGooglePopup, 
+  createUserWithEmail, 
+  sendVerificationEmail, 
+  signInWithEmail, 
+  saveUserData, 
+  storage,       // Storage 추가
+  fetchFileURL,  // 파일 URL 가져오기 함수 추가
+};

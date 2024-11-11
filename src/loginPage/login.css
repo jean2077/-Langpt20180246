@@ -11,56 +11,68 @@
 /* 헤더 텍스트 (hello_2) 스타일 */
 .hello_2 {
   font-family: 'Roboto', sans-serif;
-
-  font-size: 80px; /* 텍스트 크기 원래대로 설정 */
+  font-size: 70px;
   font-weight: 400;
   text-align: center;
   color: #333;
-  margin-bottom: 20px; /* 아래쪽 여백 */
-  position: absolute; /* 절대 위치 설정 */
-  top: 40px; /* 화면 상단에서 20px */
-  left: 50%; /* 수평 중앙 정렬 */
-  transform: translateX(-50%); /* 정확한 중앙 정렬 */
-  opacity: 0; /* 처음에는 보이지 않음 */
-  animation: slideDown 1.5s ease-in-out forwards; /* 애니메이션 속도 조정 */
+  margin-bottom: 20px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: hidden; /* 넘치는 텍스트 숨기기 */
+  border-right: 2px solid #333; /* 깜빡이는 커서 */
+
+  /* 타이핑 애니메이션 적용 */
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-/* 애니메이션 정의 - 위에서 아래로 */
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-30px); /* 시작 시 위에 위치 */
+/* 타이핑 애니메이션 */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0); /* 끝에선 정상 위치 */
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
   }
 }
 
 /* 로그인 박스 */
 .chat_ractangle2 {
-  width: 100%; /* 너비를 100%로 확장 */
-  max-width: 500px; /* 최대 너비 설정 */
+  width: 100%;
+  max-width: 500px;
   padding: 20px;
   background: linear-gradient(to bottom, rgba(173, 216, 230, 0.8), rgba(255, 255, 255, 0.8));
   border-radius: 10px;
   border: 2px solid #367cff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 20px; /* 로그인 박스와 텍스트 사이에 여백 추가 */
-  animation: slideUp 0.8s ease-out forwards; /* 애니메이션 속도 조정 */
-  /* overflow: auto; 이 부분 제거 */
+  margin-top: 20px;
+
+  /* 새로운 애니메이션 - 오른쪽에서 슬라이드 인 */
+  opacity: 0;
+  transform: translateX(50px); /* 오른쪽에서 시작 */
+  animation: slideInFromRight 0.8s ease-out forwards;
 }
 
-/* 로그인 박스 슬라이드 애니메이션 */
-@keyframes slideUp {
+@keyframes slideInFromRight {
   0% {
     opacity: 0;
-    transform: translateY(30px); /* 시작 시 아래쪽에 위치 */
+    transform: translateX(50px); /* 오른쪽에서 시작 */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* 끝에선 정상 위치 */
+    transform: translateX(0); /* 정상 위치 */
   }
 }
 
@@ -74,7 +86,7 @@
   border-radius: 5px;
   margin-bottom: 20px;
   font-size: 14px;
-  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  transition: all 0.3s ease;
 }
 
 /* 구글 버튼 스타일 */
@@ -90,58 +102,58 @@
   cursor: pointer;
   border: none;
   text-align: center;
-  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  transition: all 0.3s ease;
 }
 
 .google-button:hover {
   background-color: #357ae8;
-  transform: scale(1.05); /* 버튼 크기 살짝 확대 */
+  transform: scale(1.05);
 }
 
 /* 이메일 로그인 버튼 스타일 */
 .email-login-button {
-  background: none; /* 배경 제거 */
-  border: none; /* 테두리 제거 */
-  color: #367cff; /* 글자 색 */
-  font-size: 16px; /* 글자 크기 */
+  background: none;
+  border: none;
+  color: #367cff;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
-  padding: 10px 20px; /* 여백 */
-  margin-top: 20px; /* 위쪽 여백 */
-  text-decoration: underline; /* 밑줄 추가 */
-  display: inline-block; /* 텍스트와 버튼 스타일 일치 */
-  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .email-login-button:hover {
-  text-decoration: none; /* 호버 시 밑줄 없애기 */
-  color: #fff; /* 글자색 변경 */
-  background-color: #367cff; /* 배경색 변경 */
-  transform: scale(1.05); /* 버튼 크기 살짝 확대 */
+  text-decoration: none;
+  color: #fff;
+  background-color: #367cff;
+  transform: scale(1.05);
 }
 
 /* 회원가입 버튼 스타일 */
 .newmember-button {
-  background: none; /* 배경 제거 */
-  border: none; /* 테두리 제거 */
-  color: #367cff; /* 글자 색 */
-  font-size: 16px; /* 글자 크기 */
+  background: none;
+  border: none;
+  color: #367cff;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
-  padding: 10px 20px; /* 여백 */
-  margin-top: 11px; /* 로그인 박스 바로 아래에 위치 */
-  text-decoration: underline; /* 밑줄 추가 */
-  transition: all 0.3s ease; /* 부드러운 전환 효과 */
-  height: 50px; /* 버튼의 높이 설정 */
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  height: 50px;
 }
 
 .newmember-button:hover {
-  text-decoration: none; /* 호버 시 밑줄 없애기 */
-  color: #fff; /* 글자색 변경 */
-  background-color: #367cff; /* 배경색 변경 */
-  transform: scale(1.05); /* 버튼 크기 살짝 확대 */
+  text-decoration: none;
+  color: #fff;
+  background-color: #367cff;
+  transform: scale(1.05);
 }
 
 /* 오류 메시지 스타일 */
@@ -150,7 +162,7 @@
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
-  font-size: 14px; /* 글자 크기 줄이기 */
+  font-size: 14px;
 }
 
 /* 성공 메시지 스타일 */
@@ -159,33 +171,32 @@
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
-  font-size: 14px; /* 글자 크기 줄이기 */
+  font-size: 14px;
 }
 
 .auth-link-container {
   display: flex;
-  justify-content: center; /* 수평 중앙 정렬 */
-  margin-top: 20px; /* 위쪽 여백 추가 */
-  flex-wrap: wrap; /* 여러 줄이 필요할 경우 줄바꿈 허용 */
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 /* 아이디 찾기, 비밀번호 찾기 링크 스타일 */
 .auth-link {
-  color: #367cff; /* 링크 글자 색상 */
-  font-size: 16px; /* 글자 크기 */
+  color: #367cff;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
-  padding: 10px 20px; /* 링크에 여백 추가 */
-  text-decoration: underline; /* 밑줄 추가 */
-  display: inline-block; /* 텍스트와 버튼 스타일 일치 */
-  margin: 10px 10px; /* 왼쪽과 오른쪽 여백을 추가하여 간격 조정 */
+  padding: 10px 20px;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 10px 10px;
 }
 
 .auth-link:hover {
-  text-decoration: none; /* 호버 시 밑줄 없애기 */
-  color: #fff; /* 호버 시 글자색 변경 */
-  background-color: #367cff; /* 배경색 변경 */
-  transform: scale(1.05); /* 버튼 크기 살짝 확대 */
+  text-decoration: none;
+  color: #fff;
+  background-color: #367cff;
+  transform: scale(1.05);
 }
-

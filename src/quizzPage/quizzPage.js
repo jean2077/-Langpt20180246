@@ -53,6 +53,52 @@ const QuizPage = () => {
       result: "감사합니다"
     },
     // ... (나머지 퀴즈 항목들도 동일한 방식으로 추가)
+     // 영어 문제
+     {
+      explain: "'Hello'는 인사말로 '안녕하세요'를 의미합니다.",
+      options: {
+        option1: "안녕히 가세요",
+        option2: "안녕하세요"
+      },
+      question: "‘Hello’의 뜻은 무엇인가요?",
+      result: "안녕하세요"
+    },
+    {
+      explain: "'Goodbye'는 '안녕히 가세요'를 의미합니다.",
+      options: {
+        option1: "안녕하세요",
+        option2: "안녕히 가세요"
+      },
+      question: "‘Goodbye’의 뜻은 무엇인가요?",
+      result: "안녕히 가세요"
+    },
+    {
+      explain: "'Thank you'는 '감사합니다'를 의미합니다.",
+      options: {
+        option1: "감사합니다",
+        option2: "미안합니다"
+      },
+      question: "‘Thank you’의 뜻은 무엇인가요?",
+      result: "감사합니다"
+    },
+    {
+      explain: "'Sorry'는 '미안합니다'라는 의미입니다.",
+      options: {
+        option1: "미안합니다",
+        option2: "안녕히 계세요"
+      },
+      question: "‘Sorry’의 뜻은 무엇인가요?",
+      result: "미안합니다"
+    },
+    {
+      explain: "'Good morning'은 '좋은 아침입니다'라는 인사말입니다.",
+      options: {
+        option1: "좋은 아침입니다",
+        option2: "잘자요"
+      },
+      question: "‘Good morning’의 뜻은 무엇인가요?",
+      result: "좋은 아침입니다"
+    }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
