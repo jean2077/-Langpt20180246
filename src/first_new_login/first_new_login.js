@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // useNavigate 추가
+import { useNavigate } from 'react-router-dom';
 import './first_new_login.css'; // 스타일 시트 임포트
+import { Link } from 'react-router-dom'; // Link 컴포넌트 임포트
 
 function FirstNewLogin() {
   const [selectedTeacher, setSelectedTeacher] = useState(null); // 선택된 선생님 상태
   const navigate = useNavigate(); // 페이지 이동 함수
-
-  const handleStartClick = () => {
-    if (selectedTeacher) {
-      // 선택된 선생님 이름을 상태로 전달하며 /chat 페이지로 이동
-      navigate('/chat', { state: { teacherName: selectedTeacher } });
-    } else {
-      alert('선생님을 선택해주세요!'); // 선택하지 않은 경우 경고
-    }
-  };
 
   const handleTeacherClick = (teacher) => {
     setSelectedTeacher(teacher); // 클릭된 선생님으로 상태 업데이트
@@ -30,7 +22,6 @@ function FirstNewLogin() {
 
       {/* 선생님 선택 영역 */}
       <div className="teacher-selection">
-        {/* 각각의 선생님을 클릭 시 선택 상태에 따라 스타일 변경 */}
         <div
           className={`teacher ${selectedTeacher === "메이린" ? "selected" : ""}`}
           onClick={() => handleTeacherClick("메이린")}
@@ -51,10 +42,14 @@ function FirstNewLogin() {
         </div>
       </div>
 
-      {/* 시작 버튼 */}
-      <button onClick={handleStartClick} className="start">
-        이제 즐거운 언어학습을 시작해볼까요?
-      </button>
+      {/* 시작 버튼을 링크로 대체 */}
+      <Link
+        to={selectedTeacher ? "/chat" : "#"}
+        state={selectedTeacher ? { teacherName: selectedTeacher } : {}}
+        className="start"
+      >
+       여기를 눌러 즐거운 언어학습을 시작해볼까요?
+      </Link>
     </div>
   );
 }
