@@ -1,43 +1,74 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getFirestore, doc, getDoc, collection, getDocs } from "firebase/firestore";
 import './stats.css';
 
 function Stats() {
   const [stats, setStats] = useState({
-    weeklyChatCount: 120,
-    dailyAvgStudyTime: 45,
-    dailyTotalTime: 300,
-    totalQuizScore: 85,
-    totalLoginTime: 500,
+    weeklyChatCount: 0,
+    dailyAvgStudyTime: 0,
+    dailyTotalTime: 0,
+    totalQuizScore: 0,
+    totalLoginTime: 0,
   });
 
   const [randomQuote, setRandomQuote] = useState('');
   const [imageUrl, setImageUrl] = useState('https://via.placeholder.com/300');
   const navigate = useNavigate();
+  const db = getFirestore(); // Firestore 초기화
 
-  const quotes = [
-    "시작이 반이다. 작은 걸음이지만 시작이 중요하다.",
-    "오늘 하루를 열심히 살면 내일은 더 나은 내가 된다.",
-    "성공은 준비된 자에게 온다.",
-    "절대 포기하지 마라. 당신이 마지막에 웃을 것이다.",
-  ];
-
-  const getImageForTotalStudyTime = () => {
-    if (stats.dailyTotalTime >= 300) {
+  const getImageForTotalStudyTime = (dailyTotalTime) => {
+    if (dailyTotalTime >= 300) {
       return 'https://via.placeholder.com/300?text=300시간+성취';
-    } else if (stats.dailyTotalTime >= 200) {
+    } else if (dailyTotalTime >= 200) {
       return 'https://via.placeholder.com/300?text=200시간+성취';
-    } else if (stats.dailyTotalTime >= 100) {
+    } else if (dailyTotalTime >= 100) {
       return 'https://via.placeholder.com/300?text=100시간+성취';
     } else {
       return 'https://via.placeholder.com/300?text=더+공부해주세요';
     }
   };
 
+  // Firestore에서 사용자 통계 가져오기
+  const fetchUserStats = async (userId) => {
+    try {
+      const docRef = doc(db, "userStats", userId); // "userStats" 컬렉션에서 특정 사용자 문서 참조
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        setStats(data);
+        setImageUrl(getImageForTotalStudyTime(data.dailyTotalTime)); // 이미지 URL 업데이트
+      } else {
+        console.error("사용자 통계 문서를 찾을 수 없습니다.");
+      }
+    } catch (error) {
+      console.error("Firestore 데이터 가져오기 중 오류 발생:", error);
+    }
+  };
+
+  // Firestore에서 명언 가져오기
+  const fetchQuotes = async () => {
+    try {
+      const quotesCollectionRef = collection(db, "quotes"); // "quotes" 컬렉션 참조
+      const querySnapshot = await getDocs(quotesCollectionRef);
+      const quotesArray = querySnapshot.docs.map((doc) => doc.data().quote);
+
+      if (quotesArray.length > 0) {
+        const randomIndex = Math.floor(Math.random() * quotesArray.length);
+        setRandomQuote(quotesArray[randomIndex]); // 랜덤 명언 선택
+      } else {
+        console.error("명언 데이터가 없습니다.");
+      }
+    } catch (error) {
+      console.error("명언 데이터를 가져오는 중 오류 발생:", error);
+    }
+  };
+
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    setRandomQuote(quotes[randomIndex]);
-    setImageUrl(getImageForTotalStudyTime());
+    const userId = "exampleUserId"; // 사용자 ID를 적절히 교체하세요 (예: 인증 시스템에서 가져오기)
+    fetchUserStats(userId); // Firestore에서 사용자 통계 데이터 가져오기
+    fetchQuotes(); // Firestore에서 명언 데이터 가져오기
   }, []);
 
   return (
@@ -65,10 +96,6 @@ function Stats() {
           <h3>총 로그인 시간</h3>
           <p>{stats.totalLoginTime} 분</p>
         </div>
-      </div>
-
-      <div className="recommendation">
-     
       </div>
 
       <div className="quote-section">

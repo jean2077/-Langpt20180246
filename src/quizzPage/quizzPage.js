@@ -1,112 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../firebase';  // firebase.js 경로 수정
 import { collection, getDocs } from 'firebase/firestore';  // Firestore에서 데이터 가져오기
-import { useNavigate } from 'react-router-dom';  // react-router-dom의 useNavigate 가져오기
-import './quizzPage.css';  // quizzPage 폴더 내의 quizPage.css를 임포트
+import { useNavigate } from 'react-router-dom';
+import './quizzPage.css';
 
 const QuizPage = () => {
-  // 하드코딩된 퀴즈 데이터
-  const quizzes = [
-    {
-      explain: "'我'는 중국어로 '나'를 의미합니다.",
-      options: {
-        option1: "너",
-        option2: "나"
-      },
-      question: "‘我’의 의미는 무엇인가요?",
-      result: "나"
-    },
-    {
-      explain: "'他们'는 '그들'을 의미합니다.",
-      options: {
-        option1: "그녀들",
-        option2: "그들"
-      },
-      question: "‘他们’의 뜻은 무엇인가요?",
-      result: "그들"
-    },
-    {
-      explain: "'吃'는 '먹다'라는 의미입니다.",
-      options: {
-        option1: "먹다",
-        option2: "마시다"
-      },
-      question: "‘吃’의 뜻은 무엇인가요?",
-      result: "먹다"
-    },
-    {
-      explain: "'我喜欢汉字'는 '나는 한자를 좋아한다.'는 의미입니다.",
-      options: {
-        option1: "나는 한자를 좋아한다.",
-        option2: "나는 한자를 싫어한다."
-      },
-      question: "‘我喜欢汉字’의 의미는 무엇인가요?",
-      result: "나는 한자를 좋아한다."
-    },
-    {
-      explain: "'谢谢'는 '감사합니다'라는 의미입니다.",
-      options: {
-        option1: "안녕",
-        option2: "감사합니다"
-      },
-      question: "‘谢谢’의 뜻은 무엇인가요?",
-      result: "감사합니다"
-    },
-    // ... (나머지 퀴즈 항목들도 동일한 방식으로 추가)
-     // 영어 문제
-     {
-      explain: "'Hello'는 인사말로 '안녕하세요'를 의미합니다.",
-      options: {
-        option1: "안녕히 가세요",
-        option2: "안녕하세요"
-      },
-      question: "‘Hello’의 뜻은 무엇인가요?",
-      result: "안녕하세요"
-    },
-    {
-      explain: "'Goodbye'는 '안녕히 가세요'를 의미합니다.",
-      options: {
-        option1: "안녕하세요",
-        option2: "안녕히 가세요"
-      },
-      question: "‘Goodbye’의 뜻은 무엇인가요?",
-      result: "안녕히 가세요"
-    },
-    {
-      explain: "'Thank you'는 '감사합니다'를 의미합니다.",
-      options: {
-        option1: "감사합니다",
-        option2: "미안합니다"
-      },
-      question: "‘Thank you’의 뜻은 무엇인가요?",
-      result: "감사합니다"
-    },
-    {
-      explain: "'Sorry'는 '미안합니다'라는 의미입니다.",
-      options: {
-        option1: "미안합니다",
-        option2: "안녕히 계세요"
-      },
-      question: "‘Sorry’의 뜻은 무엇인가요?",
-      result: "미안합니다"
-    },
-    {
-      explain: "'Good morning'은 '좋은 아침입니다'라는 인사말입니다.",
-      options: {
-        option1: "좋은 아침입니다",
-        option2: "잘자요"
-      },
-      question: "‘Good morning’의 뜻은 무엇인가요?",
-      result: "좋은 아침입니다"
-    }
-  ];
-
+  const [quizzes, setQuizzes] = useState([]); // 퀴즈 데이터를 Firestore에서 가져옴
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [answerSelected, setAnswerSelected] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(null); // 선택한 답을 저장하는 상태
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const navigate = useNavigate();
+
+  // Firestore에서 퀴즈 데이터 가져오기
+  const fetchQuizzes = async () => {
+    try {
+      const quizCollectionRef = collection(db, "quizzes"); // Firestore의 "quizzes" 컬렉션 참조
+      const querySnapshot = await getDocs(quizCollectionRef);
+      const quizzesData = querySnapshot.docs.map((doc) => doc.data());
+      setQuizzes(quizzesData); // 가져온 데이터를 상태에 저장
+    } catch (error) {
+      console.error("Firestore에서 퀴즈 데이터를 가져오는 중 오류 발생:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchQuizzes();
+  }, []);
 
   const handleAnswer = (selectedOption) => {
     if (answerSelected) return;
@@ -116,14 +37,14 @@ const QuizPage = () => {
     if (selectedOption === correctAnswer) {
       setScore(score + 1);
     }
-    setAnswerSelected(true); // 답을 선택하면 답변 고정
+    setAnswerSelected(true);
   };
 
   const handleNext = () => {
     if (currentIndex < quizzes.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setAnswerSelected(false);
-      setSelectedAnswer(null); // 선택한 답 초기화
+      setSelectedAnswer(null);
     } else {
       alert(`퀴즈 완료! 총 ${score}개의 문제를 맞혔습니다.`);
       setCurrentIndex(0); // 초기화
@@ -136,6 +57,11 @@ const QuizPage = () => {
   const handleGoHome = () => {
     navigate('/');
   };
+
+  // 퀴즈 로드 중 로딩 메시지 표시
+  if (quizzes.length === 0) {
+    return <div>퀴즈 데이터를 불러오는 중...</div>;
+  }
 
   const currentQuiz = quizzes[currentIndex];
 

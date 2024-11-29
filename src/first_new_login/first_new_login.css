@@ -123,10 +123,13 @@
   color: #333;
 }
 
-/* 시작 문구 스타일 */
-.teacher-selection .start {
-  margin-top: 20px;
+.teacher-selection > .start {
+  margin-top: 30px; /* 위쪽 간격 */
   font-size: 1.2rem;
   color: #555;
   font-weight: bold;
+  position: absolute; /* 절대 위치를 기준으로 설정 */
+  top: 50%; /* 부모 요소 기준으로 위에서 50% */
+  left: 50%; /* 부모 요소 기준으로 왼쪽에서 50% */
+  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
 }
