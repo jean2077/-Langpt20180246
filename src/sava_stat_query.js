@@ -4,14 +4,7 @@ import { getFirestore, doc, setDoc } from "firebase/firestore";  // Firestore �
 
 // Firebase 설정
 const firebaseConfig = {
-  apiKey: "AIzaSyBKFzIBGvhRXOe_T7k5x5sXLSRqBHBl0DU",
-  authDomain: "langpt3.firebaseapp.com",
-  databaseURL: "https://langpt3-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "langpt3",
-  storageBucket: "langpt3.firebasestorage.app",
-  messagingSenderId: "158730957221",
-  appId: "1:158730957221:web:0a5a5f528d9cc57015384c",
-  measurementId: "G-75XSDMYPGF"
+
 };
 
 // Firebase 초기화
